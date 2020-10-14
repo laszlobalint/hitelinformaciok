@@ -1925,9 +1925,8 @@ footer ul li {
   color: #ffffff;
 }
 .footer-main .footer-logo {
-  width: 162px;
-  height: 39px;
-  background: url('../images/footer-logo.png') no-repeat center;
+  height: 60px;
+  background: url('../images/hitelexpert.png') no-repeat center;
   background-size: 162px 39px;
   margin: -0.6rem 0 2.1rem -0.3rem;
   display: block;
