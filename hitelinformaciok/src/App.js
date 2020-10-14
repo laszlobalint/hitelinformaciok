@@ -1,8 +1,10 @@
 import React from 'react';
 
 import './App.css';
-import sampleImage from './images/sample-image.jpg';
-import postThumb from './images/sample-image.jpg';
+import ownerShip from './images/ownership.png';
+import avatarOne from './images/avatars/avatar_1.jpg';
+import avatarTwo from './images/avatars/avatar_2.jpg';
+import avatarThree from './images/avatars/avatar_3.jpg';
 
 const App = (props) => {
   return (
@@ -88,8 +90,457 @@ const App = (props) => {
             ></iframe>
           </div>
           <a className="close-popup" href="http://hitelinformaciok.hu/">
-            Close
+            Bezárás
           </a>
+        </div>
+      </section>
+
+      {/* FEATURES SECTION */}
+      <section id="process">
+        <div className="row section-intro">
+          <div className="col-twelve with-bottom-line">
+            <h5>Lépések</h5>
+            <h1>Hogyan működik?</h1>
+            <p className="lead">
+              A piacvezető pénintézetek ajánlatait egy helyen megtalálhatja. Az online hitelkalkulátorunk igénybevételével időt, pénzt és
+              fáradtságot takaríthat meg magának.
+            </p>
+          </div>
+        </div>
+        <div className="row process-content">
+          <div className="left-side">
+            <div className="item" data-item="1">
+              <h5>IGÉNYFELMÉRÉS</h5>
+              <p>A hitelkalkulátoraink segítségével válassza ki az Önnek legmegfelelőbb bankot és ajánlatot.</p>
+            </div>
+            <div className="item" data-item="2">
+              <h5>AJÁNLATKÉRÉS</h5>
+              <p>Ajánlatkéréshez adja meg a szükséges adatokat és információkat, melyek után 12 órán belül felkeressük.</p>
+            </div>
+            <div className="item" data-item="3">
+              <h5>TÁJÉKOZTATÁS</h5>
+              <p>Igény szerint, személyesen adunk tájékoztatást a folyamatról, feltételekről, előnyökről, esetleges hátrányokról.</p>
+            </div>
+          </div>
+          <div className="right-side">
+            <div className="item" data-item="4">
+              <h5>HITEIGÉNYLÉS</h5>
+              <p>Hiteligénylés folyamatának elindítása, dokumentumok összeállítás és folyamatos visszaigazolás a folyamatról.</p>
+            </div>
+            <div className="item" data-item="5">
+              <h5>SZERZŐDÉS</h5>
+              <p>Felkészítés a banki szerződéskötésre, a szerződés kiküldése, valamint igény szerinti átbeszélése.</p>
+            </div>
+            <div className="item" data-item="6">
+              <h5>FOLYÓSÍTÁS</h5>
+              <p>Segítség és támogatás a Folyósítási feltételek teljesítésében, illetve rendszeres konzultációk.</p>
+            </div>
+          </div>
+          <div className="image-part"></div>
+        </div>
+      </section>
+
+      {/* FEATURES SECTION */}
+      <section id="features">
+        <div className="row section-intro">
+          <div className="col-twelve with-bottom-line">
+            <h5>Features</h5>
+            <h1>Great features you'll love.</h1>
+            <p className="lead">
+              Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem
+              ipsum Consectetur ut in in eu do.
+            </p>
+          </div>
+        </div>
+        <div className="row features-content">
+          <div className="features-list block-1-3 block-s-1-2 block-tab-full group">
+            <div className="bgrid feature">
+              <span className="icon">
+                <i className="icon-window"></i>
+              </span>
+              <div className="service-content">
+                <h3 className="h05">Fully Resposive</h3>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+                  ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                  quia voluptas sit aspernatur aut odit aut fugit.
+                </p>
+              </div>
+            </div>
+            <div className="bgrid feature">
+              <span className="icon">
+                <i className="icon-eye"></i>
+              </span>
+              <div className="service-content">
+                <h3 className="h05">Retina Ready</h3>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+                  ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                  quia voluptas sit aspernatur aut odit aut fugit.
+                </p>
+              </div>
+            </div>
+            <div className="bgrid feature">
+              <span className="icon">
+                <i className="icon-paint-brush"></i>
+              </span>
+              <div className="service-content">
+                <h3 className="h05">Stylish Design</h3>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+                  ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                  quia voluptas sit aspernatur aut odit aut fugit.
+                </p>
+              </div>
+            </div>
+            <div className="bgrid feature">
+              <span className="icon">
+                <i className="icon-file"></i>
+              </span>
+              <div className="service-content">
+                <h3 className="h05">Clean Code</h3>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+                  ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                  quia voluptas sit aspernatur aut odit aut fugit.
+                </p>
+              </div>
+            </div>
+            <div className="bgrid feature">
+              <span className="icon">
+                <i className="icon-layers"></i>
+              </span>
+              <div className="service-content">
+                <h3 className="h05">Easy To Customize</h3>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+                  ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                  quia voluptas sit aspernatur aut odit aut fugit.
+                </p>
+              </div>
+            </div>
+            <div className="bgrid feature">
+              <span className="icon">
+                <i className="icon-gift"></i>
+              </span>
+              <div className="service-content">
+                <h3 className="h05">Free of Charge</h3>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+                  ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                  quia voluptas sit aspernatur aut odit aut fugit.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* PRICING SECTION */}
+      <section id="pricing">
+        <div className="row section-intro">
+          <div className="col-twelve with-bottom-line">
+            <h5>Our Pricing</h5>
+            <h1>Pick the best plan for you.</h1>
+            <p className="lead">
+              Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem
+              ipsum Consectetur ut in in eu do.
+            </p>
+          </div>
+        </div>
+        <div className="row pricing-content">
+          <div className="pricing-tables block-1-4 group">
+            <div className="bgrid">
+              <div className="price-block">
+                <div className="top-part">
+                  <h3 className="plan-title">Starter</h3>
+                  <p className="plan-price">
+                    <sup>$</sup>4.99
+                  </p>
+                  <p className="price-month">Per month</p>
+                  <p className="price-meta">Billed Annually.</p>
+                </div>
+                <div className="bottom-part">
+                  <ul className="features">
+                    <li>
+                      <strong>3GB</strong> Storage
+                    </li>
+                    <li>
+                      <strong>10GB</strong> Bandwidth
+                    </li>
+                    <li>
+                      <strong>5</strong> Databases
+                    </li>
+                    <li>
+                      <strong>30</strong> Email Accounts
+                    </li>
+                  </ul>
+                  <a className="button large" href="http://hitelinformaciok.hu/">
+                    Get Started
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="bgrid">
+              <div className="price-block primary">
+                <div className="top-part" data-info="recommended">
+                  <h3 className="plan-title">Standard</h3>
+                  <p className="plan-price">
+                    <sup>$</sup>9.99
+                  </p>
+                  <p className="price-month">Per month</p>
+                  <p className="price-meta">Billed Annually.</p>
+                </div>
+                <div className="bottom-part">
+                  <ul className="features">
+                    <li>
+                      <strong>5GB</strong> Storage
+                    </li>
+                    <li>
+                      <strong>15GB</strong> Bandwidth
+                    </li>
+                    <li>
+                      <strong>7</strong> Databases
+                    </li>
+                    <li>
+                      <strong>40</strong> Email Accounts
+                    </li>
+                  </ul>
+                  <a className="button large" href="http://hitelinformaciok.hu/">
+                    Get Started
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="bgrid">
+              <div className="price-block">
+                <div className="top-part">
+                  <h3 className="plan-title">Premium</h3>
+                  <p className="plan-price">
+                    <sup>$</sup>19.99
+                  </p>
+                  <p className="price-month">Per month</p>
+                  <p className="price-meta">Billed Annually.</p>
+                </div>
+                <div className="bottom-part">
+                  <ul className="features">
+                    <li>
+                      <strong>10GB</strong> Storage
+                    </li>
+                    <li>
+                      <strong>30GB</strong> Bandwidth
+                    </li>
+                    <li>
+                      <strong>15</strong> Databases
+                    </li>
+                    <li>
+                      <strong>60</strong> Email Accounts
+                    </li>
+                  </ul>
+                  <a className="button large" href="http://hitelinformaciok.hu/">
+                    Get Started
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="bgrid">
+              <div className="price-block">
+                <div className="top-part">
+                  <h3 className="plan-title">Ultimate</h3>
+                  <p className="plan-price">
+                    <sup>$</sup>29.99
+                  </p>
+                  <p className="price-month">Per month</p>
+                  <p className="price-meta">Billed Annually.</p>
+                </div>
+                <div className="bottom-part">
+                  <ul className="features">
+                    <li>
+                      <strong>20GB</strong> Storage
+                    </li>
+                    <li>
+                      <strong>40GB</strong> Bandwidth
+                    </li>
+                    <li>
+                      <strong>25</strong> Databases
+                    </li>
+                    <li>
+                      <strong>100</strong> Email Accounts
+                    </li>
+                  </ul>
+                  <a className="button large" href="http://hitelinformaciok.hu/">
+                    Get Started
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* TESTIMONIAL SECTION */}
+      <section id="testimonials">
+        <div className="row">
+          <div className="col-twelve">
+            <h2 className="h01">Ahogyan ügyfeleink látják.</h2>
+          </div>
+        </div>
+        <div className="row flex-container">
+          <div id="testimonial-slider" className="flexslider">
+            <ul className="slides">
+              <li>
+                <div className="testimonial-author">
+                  <img src={avatarOne} alt="Author" />
+                  <div className="author-info">
+                    Dorong Dénes
+                    <span className="position">magánvállalkozó</span>
+                  </div>
+                </div>
+                <p>
+                  Segítettek eligazodni az információk sokaságában, elmondták az előnyöket és a hátrányokat is. A korábbi tapasztalataik
+                  alapján akár egyedi feltételeket, megoldásokat is tudtak kínálni. És bármilyen kérdé felmerült, teljeskörű és objektív
+                  választ kaptam.
+                </p>
+              </li>
+              <li>
+                <div className="testimonial-author">
+                  <img src={avatarTwo} alt="Author" />
+                  <div className="author-info">
+                    Teszt Tamás
+                    <span>üzletvezető</span>
+                  </div>
+                </div>
+                <p>
+                  Mert fontos nekem a minőség és a profizmus. A kollégáik elérhetőek voltak, és a teljes hitelpiaci palettáról választtuk ki
+                  a legmegfelelőbb terméket. Itt nem csak magánszemélyként, hanem cégként is megtalálhatod a legjobb finanszírozási
+                  megoldásokat.
+                </p>
+              </li>
+              <li>
+                <div className="testimonial-author">
+                  <img src={avatarThree} alt="Author" />
+                  <div className="author-info">
+                    Avatár Aranka
+                    <span>kétgyermekes családanya</span>
+                  </div>
+                </div>
+                <p>
+                  Aminek külön örültem, hogy nem kellett bajlódnom a nyomtatványok kitöltésével, a banki kapcsolattartással, a
+                  kölcsönszerződés értelmezésével vagy a folyósítási feltételekkel. Így az ügyintézés folyamatában még jól is tudtam magadat
+                  érezni.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ SECTION */}
+      <section id="faq">
+        <div className="row section-intro">
+          <div className="col-twelve with-bottom-line">
+            <h5>Faq</h5>
+            <h1>Questions and Answers.</h1>
+
+            <p className="lead">
+              Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem
+              ipsum Consectetur ut in in eu do.
+            </p>
+          </div>
+        </div>
+        <div className="row faq-content">
+          <div className="q-and-a block-1-2 block-tab-full group">
+            <div className="bgrid">
+              <h3>What are the security features?</h3>
+              <p>
+                Lorem ipsum Id in magna ad culpa dolor eu aute non amet aute ea in consectetur in quis nostrud anim proident dolore in sed
+                et mollit voluptate culpa irure consequat laborum ea sint in mollit adipisicing cupidatat.
+              </p>
+            </div>
+            <div className="bgrid">
+              <h3>How can I update my user profile?</h3>
+              <p>
+                Lorem ipsum Id in magna ad culpa dolor eu aute non amet aute ea in consectetur in quis nostrud anim proident dolore in sed
+                et mollit voluptate culpa irure consequat laborum ea sint in mollit adipisicing cupidatat.
+              </p>
+            </div>
+            <div className="bgrid">
+              <h3>What features are not included in the free version?</h3>
+              <p>
+                Lorem ipsum Id in magna ad culpa dolor eu aute non amet aute ea in consectetur in quis nostrud anim proident dolore in sed
+                et mollit voluptate culpa irure consequat laborum ea sint in mollit adipisicing cupidatat.
+              </p>
+            </div>
+            <div className="bgrid">
+              <h3>Can I upgrade my account from Starter to Premium?</h3>
+              <p>
+                Lorem ipsum Id in magna ad culpa dolor eu aute non amet aute ea in consectetur in quis nostrud anim proident dolore in sed
+                et mollit voluptate culpa irure consequat laborum ea sint in mollit adipisicing cupidatat.
+              </p>
+            </div>
+            <div className="bgrid">
+              <h3>Where can I found all my uploads?</h3>
+              <p>
+                Lorem ipsum Id in magna ad culpa dolor eu aute non amet aute ea in consectetur in quis nostrud anim proident dolore in sed
+                et mollit voluptate culpa irure consequat laborum ea sint in mollit adipisicing cupidatat.
+              </p>
+            </div>
+            <div className="bgrid">
+              <h3>How long can I use the free trial version?</h3>
+              <p>
+                Lorem ipsum Id in magna ad culpa dolor eu aute non amet aute ea in consectetur in quis nostrud anim proident dolore in sed
+                et mollit voluptate culpa irure consequat laborum ea sint in mollit adipisicing cupidatat.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="row section-ads">
+          <div className="col-twelve">
+            <div className="ad-content">
+              <h2 className="h01">
+                <a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Styleshout Recommends Dreamhost.</a>
+              </h2>
+              <p className="lead">
+                Looking for an awesome and reliable webhosting? Try
+                <a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">
+                  <span>DreamHost</span>
+                </a>
+                . Get <span>$50 off</span> when you sign up with the promocode <span>styleshout</span>.
+              </p>
+              <div className="action">
+                <a className="button large round" href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">
+                  Sign Up Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA SECTION */}
+      <section id="cta">
+        <div className="row cta-content">
+          <div className="col-twelve">
+            <h1 className="h01">Get started now. Try Lhander free for 30 days.</h1>
+            <p className="lead">Download the app now. Available on the:</p>
+            <ul className="stores">
+              <li className="app-store">
+                <a href="http://hitelinformaciok.hu/" className="button round large" title="">
+                  <i className="icon ion-social-apple"></i>App Store
+                </a>
+              </li>
+              <li className="play-store">
+                <a href="http://hitelinformaciok.hu/" className="button round large" title="">
+                  <i className="icon ion-social-android"></i>Play Store
+                </a>
+              </li>
+              <li className="windows-store">
+                <a href="http://hitelinformaciok.hu/" className="button round large" title="">
+                  <i className="icon ion-social-windows"></i>Win Store
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -97,52 +548,44 @@ const App = (props) => {
       <section id="styles">
         <div className="row">
           <div className="col-twelve tab-full">
-            <h1>This is the style page.</h1>
+            <h1>Impresszum és jogok</h1>
             <p className="lead">
-              Lorem ipsum Officia elit ad tempor dolore est ex incididunt incididunt occaecat culpa deserunt sunt labore in cillum ullamco
-              magna in Excepteur consequat in reprehenderit proident mollit incididunt officia commodo. Duis ea officia sed dolor pariatur
-              enim dolore dolore quis incididunt nulla exercitation commodo veniam et ea incididunt.
+              A Hitel Expert Kft. tájékoztatja Önt, hogy weboldalának böngészése egyúttal az alábbi feltételek elfogadását is jelenti.
+              Kérjük, az alábbiakat figyelmesen olvassa el.
             </p>
           </div>
         </div>
         <div className="row">
           <div className="col-six tab-full">
-            <h3>Paragraph and Image</h3>
             <p>
               <a href="http://hitelinformaciok.hu/">
-                <img width="120" height="120" className="pull-left" src={sampleImage} alt="" />
+                <img width="130" height="130" className="pull-left" src={ownerShip} alt="Impresszum és jogok" />
               </a>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum. Cras id urna. Morbi tincidunt,
-              orci ac convallis aliquam, lectus turpis varius lorem, eu posuere nunc justo tempus leo. Donec mattis, purus nec placerat
-              bibendum, dui pede condimentum odio, ac blandit ante orci ut diam. Cras fringilla magna. Phasellus suscipit, leo a pharetra
-              condimentum, lorem tellus eleifend magna, eget fringilla velit magna id neque. posuere nunc justo tempus leo.
+              A hitelinformaciok.hu weboldal teljes tartalma vagy bármely részlete szerzői jogvédelem alá esik. Az ehhez fűződő jogok
+              gyakorlására kizárólag a hitelinformaciok.hu tulajdonosa jogosult.
             </p>
             <p>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum. Cras id urna. Morbi tincidunt,
-              orci ac convallis aliquam, lectus turpis varius lorem, eu posuere nunc justo tempus leo. Donec mattis, purus nec placerat
-              bibendum, dui pede condimentum odio, ac blandit ante orci ut diam.
-            </p>
-            <p>
-              A <a href="http://hitelinformaciok.hu/">link</a>, <abbr title="this really isn't a very good description">abbrebation</abbr>,
-              <strong>strong text</strong>, <em>em text</em>, <del>deleted text</del>, and
-              <mark>this is a mark text.</mark>
-              <code>.code</code>
+              A hitelinformaciok.hu honlap tulajdonosának előzetes írásbeli engedélye nélkül tilos a weboldal tartalmának egészét vagy
+              részeit bármilyen egyéb módon felhasználni, reprodukálni, átruházni, terjeszteni, átdolgozni, vagy számítástechnikai
+              adatrendszerben tárolni.
             </p>
           </div>
           <div className="col-six tab-full">
-            <h3>Drop Caps</h3>
-            <p className="drop-cap">
-              Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated
-              they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by
-              their place and supplies it with the necessary regelialia. Morbi tincidunt, orci ac convallis aliquam, lectus turpis varius
-              lorem, eu posuere nunc justo tempus leo. Donec mattis, purus nec placerat bibendum, dui pede condimentum odio, ac blandit ante
-              orci ut diam. Cras fringilla magna. Phasellus suscipit, leo a pharetra condimentum, lorem tellus eleifend magna, eget
-              fringilla velit magna id neque.
-            </p>
-            <h3>Small Print</h3>
             <p>
-              Buy one widget, get one free!
-              <small>(While supplies last. Offer expires on the vernal equinox. Not valid in Ohio.)</small>
+              A művek bármilyen jogosulatlan felhasználása szerzői jogsértést valósít meg, amely a Btk. 329/A § alapján akár öt (5) évig
+              terjedő szabadságvesztéssel is büntethető.
+            </p>
+            <p>
+              A Btk. 329/A. § törvényi tényállása szerint, aki másnak a szerzői jogról szóló törvény alapján fennálló szerzői vagy ahhoz
+              kapcsolódó jogát haszonszerzés céljából, vagy vagyoni hátrányt okozva megsérti, vétséget követ el.
+            </p>
+            <p>
+              <i>
+                <strong>Hitel Expert Kft.</strong>
+              </i>
+            </p>
+            <p>
+              <i>1035 Budapest, Vihar utca 18.</i>
             </p>
           </div>
         </div>
@@ -236,12 +679,6 @@ const App = (props) => {
         </div>
         <div className="row half-bottom">
           <div className="col-six tab-full">
-            <h3>Responsive Image</h3>
-            <p>
-              <img src={postThumb} alt="post-thumb" />
-            </p>
-          </div>
-          <div className="col-six tab-full">
             <h3>Responsive video</h3>
             <div className="fluid-video-wrapper">
               <iframe
@@ -301,11 +738,11 @@ const App = (props) => {
             <div className="col-four tab-full mob-full footer-info">
               <div className="footer-logo"></div>
               <p>
-                1600 Amphitheatre Parkway
+                1035 Budapest
                 <br />
-                Mountain View, CA 94043 US
+                Vihar utca 18.
                 <br />
-                info@lhander.com &nbsp; +123-456-789
+                info@hitelinformaciok.hu &nbsp; +36 (1) 887 4846
               </p>
             </div>
             <div className="col-two tab-1-3 mob-1-2 site-links">
