@@ -2,7 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 
-import './index.css';
+import './styles/index.css';
+import './styles/base.css';
+import './styles/fonts.css';
+import './styles/main.css';
+import './styles/vendor.css';
+
 import App from './App';
 
 const app = (
