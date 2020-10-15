@@ -5,7 +5,7 @@ import { getEncryptedUserData, getCalculatorURL } from './Calculator.class';
 const Calculator = (props) => {
   const [userData, setUserData] = useState(getEncryptedUserData('John Doe', 'john.doe@mailinator.com', '1241234535', '6723', 'anytime'));
   const [calculatorUrl, setCalculatorUrl] = useState(
-    getCalculatorURL(19, 10000000, 240, 5, false, undefined, [], false, 0, 'test@test.hu', 'home_loan'),
+    getCalculatorURL(19, 10000000, 240, 5, false, 'kalkulatorok', [], false, 'test@test.hu', 'home_loan'),
   );
 
   return (

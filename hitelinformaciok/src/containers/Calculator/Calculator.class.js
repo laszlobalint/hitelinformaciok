@@ -4,7 +4,7 @@ const API_KEY = 'FDI6KhA0D2YnrMhoDzAcTrUyd3ELKBhM';
 const API_SECRET = 'isJk3PHdafDM7VUvoKS_6bneOD3V1Wa0';
 const IV_MESSAGE = 'a';
 const MODE = 'dev';
-const UNIQE = true;
+const UNIQUE = true;
 const MAX_LOAN_AMOUNT = 10000000;
 
 export class Purpose {
@@ -121,47 +121,50 @@ export const getOffersURL = (
 };
 
 /**
- * @param int     uid                Ügyfélazonosító
- * @param int     price              Ingatlanár
- * @param int     duration           Futamidő (hó)
- * @param string  creditPurpose      Hiteltípus
- * @param bool    new_tab        	   Új ablakban
- * @param string  calculatorUrl      Kalkulátor link
+ * @param number  uid                Ügyfélazonosító
+ * @param number  price              Ingatlanár
+ * @param number  duration           Futamidő (hó)
+ * @param number  credit_purpose     Hiteltípus
+ * @param boolean new_tab        	   Új ablakban
  * @param string  cssFile            Stíluslap neve
  * @param array   css                Stílusszabályok
- * @param bool    supported          Csak támogatott hitelek
- * @param int     calculatorType     Kalkulátor típus
+ * @param boolean supported          Csak támogatott hitelek
  * @param string  email              E-mail cím
  * @param string  productType        Terméktípus
+ * @param number  calculatorType     Kalkulátor típus
+   @param string  method             Metódus
+ * @param boolean uniqe              Bankonként egy ajánlat
  * @return string --> return         Eredmény
  */
 export const getCalculatorURL = (
   uid,
   price,
   duration,
-  creditPurpose,
-  newTab = false,
+  credit_purpose,
+  new_tab = false,
   cssFile = null,
   css = [],
   supported = false,
-  calculatorType = 0,
   email = null,
   productType = null,
+  calculatorType = 0,
   method = 'calculator',
+  unique = UNIQUE,
 ) => {
   let params = {
     uid,
     price,
     duration,
-    creditPurpose,
-    newTab,
+    credit_purpose,
+    new_tab,
     cssFile,
     css,
     supported,
-    calculatorType,
     email,
     productType,
     method,
+    calculatorType,
+    unique,
   };
   if (calculatorType === 0) {
     params.calculatorType = 'calculator';
@@ -188,13 +191,10 @@ export const getMiniCalculatorURL = (price, calculatorUrl, cssFile, css, method 
 };
 
 export const getURL = (params) => {
-  Object.keys(params).forEach((key) => params[key] === null && delete params[key]);
-  if (params.banks?.length === 0) delete params.banks;
-  params.uniqe = UNIQE;
-
   const encryptedData = encrypt(JSON.stringify(params));
-  return 'https://www.hitel.hu/api/embed?token=FDI6KhA0D2YnrMhoDzAcTrUyd3ELKBhM&data=kk9s3dhASNjlCAD3KHecgPHVBZRYZ96WX3aWC%2BZ7VM3Jzh79UVM6aW2IHHBjeFVqnfz1NqEmhvwMNMq5SLD5PsIhuVKXfp1gJpGkICOBAghuW4YGtvs9N8kUgaObh9KdoCRqLEYUEBQAV7UXn9u5SRI5zLc69H59cIUZN6QDMfPzEMjoATCmcBqSUxIA90xoMeld242et%2FmVQwcu9FQr3Sq0wUuMtrur3wAVtO%2BR8G7NikWTgQkdF1MQQsDoyzujD1UIyG6%2BPUs7MH4JUYlVUvm9b9ynbtjjn9GwpekFJuUzlPqtvz7cvDYy2g5A%2BQxQcKJiBoIl6VBVlQ7f%2FuTiVA%3D%3D';
-  // return `${getApiEndpoint()}/api/embed/?token=${API_KEY}&data=${encodeURIComponent(encryptedData)}`;
+
+  // return 'https://www.hitel.hu/api/embed/?token=FDI6KhA0D2YnrMhoDzAcTrUyd3ELKBhM&data=kk9s3dhASNjlCAD3KHecgMR6%2BLGE1VCo6jBzY8S1WI4EcW1jF6Jb8I0%2Fa30n%2BtjX%2BZH51mwMTKZglNE%2F0sa6sIQMNV5e48dFBk7r6DgdWkv%2BCtpAWkisp87AW6lcMtmMX9i4RPZOyjStMC7pIc4vNglKR1RFIDaUwweyCNmBbP%2FTIKf%2F8hrVJgo4vZgXt0PPOYQbVbFmhzXqbCCqpUlhXpiaNR1%2FKq%2BaHV6IWWV4bqdwqgpOqARC6mxsdEa0%2FYlfg6E5DAqPbnlKQ4Awn36tqZoXoo7vmZnpPkESvD2RtqPaWYWFhZca1wSa2OR6vCwHgNUriQk7FOs9gzv4JuKgSw%3D%3D';
+  return `${getApiEndpoint()}/api/embed/?token=${API_KEY}&data=${encodeURIComponent(encryptedData)}`;
 };
 
 /**
@@ -216,6 +216,7 @@ export const encrypt = (data) => {
   const encrypted = CryptoJS.AES.encrypt(data, API_SECRET, {
     iv,
     mode: CryptoJS.mode.CBC,
+    pad: CryptoJS.pad.ZeroPadding,
   });
 
   return encrypted;
