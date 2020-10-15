@@ -192,7 +192,7 @@ export const getMiniCalculatorURL = (price, calculatorUrl, cssFile, css, method 
 
 export const getURL = (params) => {
   const encryptedData = encrypt(JSON.stringify(params));
-
+  console.log(encryptedData.toString());
   // return 'https://www.hitel.hu/api/embed/?token=FDI6KhA0D2YnrMhoDzAcTrUyd3ELKBhM&data=kk9s3dhASNjlCAD3KHecgMR6%2BLGE1VCo6jBzY8S1WI4EcW1jF6Jb8I0%2Fa30n%2BtjX%2BZH51mwMTKZglNE%2F0sa6sIQMNV5e48dFBk7r6DgdWkv%2BCtpAWkisp87AW6lcMtmMX9i4RPZOyjStMC7pIc4vNglKR1RFIDaUwweyCNmBbP%2FTIKf%2F8hrVJgo4vZgXt0PPOYQbVbFmhzXqbCCqpUlhXpiaNR1%2FKq%2BaHV6IWWV4bqdwqgpOqARC6mxsdEa0%2FYlfg6E5DAqPbnlKQ4Awn36tqZoXoo7vmZnpPkESvD2RtqPaWYWFhZca1wSa2OR6vCwHgNUriQk7FOs9gzv4JuKgSw%3D%3D';
   return `${getApiEndpoint()}/api/embed/?token=${API_KEY}&data=${encodeURIComponent(encryptedData)}`;
 };
@@ -216,7 +216,7 @@ export const encrypt = (data) => {
   const encrypted = CryptoJS.AES.encrypt(data, API_SECRET, {
     iv,
     mode: CryptoJS.mode.CBC,
-    pad: CryptoJS.pad.ZeroPadding,
+    pad: CryptoJS.pad.Pkcs7,
   });
 
   return encrypted;
