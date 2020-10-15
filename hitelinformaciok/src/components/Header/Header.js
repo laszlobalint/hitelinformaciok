@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 import Aux from '../../hoc/Auxiliary/Auxiliary';
 
@@ -37,9 +38,9 @@ const Header = (props) => (
               </a>
             </li>
             <li className="highlight with-sep">
-              <a href="http://hitelinformaciok.hu/" title="Hitelkalkulációk">
+              <NavLink to="/calculator" exact>
                 Hitelkalkulációk
-              </a>
+              </NavLink>
             </li>
           </ul>
         </nav>

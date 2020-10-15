@@ -16,7 +16,8 @@ class Purpose
 	const LAKÁSTAKARÉK        = 9; // Lakástakarék
 }
 
-class PersonalLoanPurpose {
+class PersonalLoanPurpose
+{
 	const SZABAD_FELHASZNALAS   = 9; // Szabad felhasználásra
 	const KISOSSZEGU_KOLCSON    = 10; // Kis összegű kölcsön
 	const HITELKIVALTAS         = 11; // Hitelkiváltás
@@ -93,8 +94,7 @@ class Hitel
 		$cssFile = 'app',
 		$css = [],
 		$productType = null
-	)
-	{
+	) {
 		$params           = compact(
 			'limit',
 			'loan_amount',
@@ -139,8 +139,7 @@ class Hitel
 		$banks = [],
 		$cssFile = 'app',
 		$css = []
-	)
-	{
+	) {
 		$params           = compact(
 			'limit',
 			'price',
@@ -184,8 +183,7 @@ class Hitel
 		$calculatorType = 0,
 		$email = null,
 		$productType = null
-	)
-	{
+	) {
 		$params           = compact(
 			'uid',
 			'price',
@@ -200,7 +198,7 @@ class Hitel
 		);
 		$params['method'] = 'calculator';
 
-		if ($calculatorType == 0){
+		if ($calculatorType == 0) {
 			$params['calculatorType'] = 'calculator';
 		} else if ($calculatorType == 1) {
 			$params['calculatorType'] = 'ltp';
@@ -211,7 +209,8 @@ class Hitel
 		return static::getURL($params);
 	}
 
-	public static function getMiniCalculatorURL($price, $calculator_url, $cssFile, $css) {
+	public static function getMiniCalculatorURL($price, $calculator_url, $cssFile, $css)
+	{
 		$params = compact(
 			'price',
 			'calculator_url',
@@ -278,7 +277,7 @@ class Hitel
 		$encrypt_method = 'AES-256-CBC';
 		$iv             = substr(hash('sha256', 'a'), 0, 16);
 		$output         = openssl_encrypt($string, $encrypt_method, static::$apiSecret, 0, $iv);
-
+		echo $string;
 		return $output;
 	}
 
@@ -299,8 +298,7 @@ class Hitel
 		$phone = '',
 		$zip_code = '',
 		$availability = ''
-	)
-	{
+	) {
 		$data          = compact('name', 'email', 'phone', 'zip_code', 'availability');
 		$jsonData      = json_encode($data);
 		$encryptedData = static::encrypt($jsonData);
