@@ -24,8 +24,6 @@
     nav = $('.main-navigation');
 
   toggleButton.on('click', function (event) {
-    console.log('clicked');
-
     event.preventDefault();
     toggleButton.toggleClass('is-clicked');
     nav.slideToggle();

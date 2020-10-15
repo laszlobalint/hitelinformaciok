@@ -1,4 +1,5 @@
 import React from 'react';
+import { Route, Redirect, Switch, withRouter } from 'react-router-dom';
 
 import Aux from './hoc/Auxiliary/Auxiliary';
 import Layout from './hoc/Layout/Layout';
@@ -11,11 +12,21 @@ import avatarOne from './images/avatars/avatar_1.jpg';
 import avatarTwo from './images/avatars/avatar_2.jpg';
 import avatarThree from './images/avatars/avatar_3.jpg';
 
+import Calculator from './containers/Calculator/Calculator';
+
 const App = (props) => {
+  const routes = (
+    <Switch>
+      <Route path="/calculator" component={Calculator} />
+      <Redirect to="/" />
+    </Switch>
+  );
+
   return (
     <Aux>
       <Layout>
         <Header />
+        {routes}
         {/* FEATURES SECTION */}
         <section id="process">
           <div className="row section-intro">
@@ -652,7 +663,6 @@ const App = (props) => {
             </div>
           </div>
         </section>
-
         <Scroller />
         <Preloader />
         <Footer />
@@ -661,4 +671,4 @@ const App = (props) => {
   );
 };
 
-export default App;
+export default withRouter(App);
