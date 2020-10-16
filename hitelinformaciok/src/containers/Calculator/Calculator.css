@@ -968,7 +968,7 @@ rzslider .rz-bar-wrapper .rz-bar.rz-selection {
   display: block;
   height: 40px;
   margin-top: -1px;
-  background: #255d88;
+  background: #05bca9;
   margin-left: -1px;
 }
 
@@ -2417,13 +2417,15 @@ a:hover {
   height: 50px;
   padding: 8px 50px;
   font-size: 25px;
+  border-radius: 1rem;
   vertical-align: top;
   color: #fff;
-  background-color: #d32d27;
+  background-color: #264653;
 }
 
 .search-form-wrapper .auto-search__btn:hover {
-  background-color: #d32d28;
+  background-color: #264653;
+  opacity: 0.7;
 }
 
 .search-form-wrapper .auto-search__tooltip {

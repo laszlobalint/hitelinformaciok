@@ -1,7 +1,7 @@
 import CryptoJS from 'crypto-js';
 
 const API_KEY = 'FDI6KhA0D2YnrMhoDzAcTrUyd3ELKBhM';
-const API_SECRET = 'isJk3PHdafDM7VUvoKS_6bneOD3V1Wa0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0';
+const API_SECRET = 'isJk3PHdafDM7VUvoKS_6bneOD3V1Wa0';
 const IV_MESSAGE = 'a';
 const MODE = 'dev';
 const UNIQUE = true;
@@ -33,48 +33,6 @@ export class WidgetPlace {
 }
 
 /**
- * @param int     limit             Találatok (1-3)
- * @param int     loanAmount        Hitelösszeg
- * @param int     duration          Futamidő (hó)
- * @param string  creditPurpose     Hiteltípus
- * @param string  calculatorUrl     Kalkulátor link
- * @param int     widgetMode        Megjelenés (1-4)
- * @param array   banks             Bankazonosítók
- * @param string  cssFile           Stíluslap neve
- * @param array   css               Stílusszabályok
- * @return string --> return        Eredmény
- */
-export const getMinimalOffersURL = (
-  limit,
-  loanAmount,
-  duration,
-  creditPurpose,
-  calculatorUrl,
-  widgetMode = 1,
-  banks = [],
-  cssFile = 'calculator',
-  css = [],
-  productType = null,
-  method = 'minimalOffers',
-) => {
-  const params = {
-    limit,
-    loanAmount,
-    duration,
-    creditPurpose,
-    calculatorUrl,
-    widgetMode,
-    banks,
-    cssFile,
-    css,
-    productType,
-    method,
-  };
-
-  return getURL(params);
-};
-
-/**
  * @param number  limit             Találatok (1-3)
  * @param number  price             Hitelösszeg
  * @param number  loanAmount        Hitelösszeg
@@ -86,6 +44,7 @@ export const getMinimalOffersURL = (
  * @param array   banks             Bankazonosítók
  * @param string  cssFile           Stíluslap neve
  * @param array   css               Stílusszabályok
+ * @param string  method            Metódus
  * @return string --> return        Eredmény
  */
 export const getOffersURL = (
@@ -142,7 +101,7 @@ export const getCalculatorURL = (
   duration,
   credit_purpose,
   new_tab = false,
-  cssFile = null,
+  cssFile = 'calculator',
   css = [],
   supported = false,
   email = null,
@@ -191,9 +150,9 @@ export const getMiniCalculatorURL = (price, calculatorUrl, cssFile, css, method 
 };
 
 export const getURL = (params) => {
-  const ciphertextB64 = encrypt(JSON.stringify(params)).toString();
-  // return 'https://www.hitel.hu/api/embed/?token=FDI6KhA0D2YnrMhoDzAcTrUyd3ELKBhM&data=kk9s3dhASNjlCAD3KHecgMR6%2BLGE1VCo6jBzY8S1WI4EcW1jF6Jb8I0%2Fa30n%2BtjX%2BZH51mwMTKZglNE%2F0sa6sIQMNV5e48dFBk7r6DgdWkv%2BCtpAWkisp87AW6lcMtmMX9i4RPZOyjStMC7pIc4vNglKR1RFIDaUwweyCNmBbP%2FTIKf%2F8hrVJgo4vZgXt0PPOYQbVbFmhzXqbCCqpUlhXpiaNR1%2FKq%2BaHV6IWWV4bqdwqgpOqARC6mxsdEa0%2FYlfg6E5DAqPbnlKQ4Awn36tqZoXoo7vmZnpPkESvD2RtqPaWYWFhZca1wSa2OR6vCwHgNUriQk7FOs9gzv4JuKgSw%3D%3D';
-  return `${getApiEndpoint()}/api/embed/?token=${API_KEY}&data=${ciphertextB64.replace(/(.{64})/g, '$1\n')}`;
+  const ciphertextB64 = encrypt(JSON.stringify(params)).toString().replace(/\+/g, '%2B').replace(/\//g, '%2F').replace(/=/g, '%3D');
+
+  return `${getApiEndpoint()}/api/embed/?token=${API_KEY}&data=${ciphertextB64}`;
 };
 
 /**
@@ -207,13 +166,15 @@ export const getURL = (params) => {
 export const getEncryptedUserData = (name, email, phone, zipCode, availability) => {
   const data = { name, email, phone, zipCode, availability };
 
-  return encrypt(JSON.stringify(data));
+  return encrypt(JSON.stringify(data)).toString().replace(/\+/g, '%2B').replace(/\//g, '%2F').replace(/=/g, '%3D');
 };
 
 function encrypt(stringData) {
   const iv = CryptoJS.SHA256(IV_MESSAGE).toString(CryptoJS.enc.Hex).substring(0, 16);
   const encrypted = CryptoJS.AES.encrypt(stringData, CryptoJS.enc.Utf8.parse(API_SECRET), {
     iv: CryptoJS.enc.Utf8.parse(iv),
+    mode: CryptoJS.mode.CBC,
+    pad: CryptoJS.pad.Pkcs7,
   });
 
   return encrypted;
