@@ -342,13 +342,11 @@ const Main = (props) => (
         </div>
       </div>
     </section>
-    ;
     <section id="faq">
       <div className="row section-intro">
         <div className="col-twelve with-bottom-line">
-          <h5>Faq</h5>
-          <h1>Questions and Answers.</h1>
-
+          <h5>GY.I.K.</h5>
+          <h1>Kérdések és válaszok.</h1>
           <p className="lead">
             Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem
             ipsum Consectetur ut in in eu do.
@@ -464,7 +462,12 @@ const Main = (props) => (
         <div className="col-six tab-full">
           <p>
             <a href="http://hitelinformaciok.hu/">
-              <img width="130" height="130" className="pull-left" src={ownerShip} alt="Impresszum és jogok" />
+              <img
+                style={{ width: '130px', height: '130px', borderRadius: '999px' }}
+                className="pull-left"
+                src={ownerShip}
+                alt="Impresszum és jogok"
+              />
             </a>
             A hitelinformaciok.hu weboldal teljes tartalma vagy bármely részlete szerzői jogvédelem alá esik. Az ehhez fűződő jogok
             gyakorlására kizárólag a hitelinformaciok.hu tulajdonosa jogosult.
@@ -526,63 +529,6 @@ const Main = (props) => (
         </div>
       </div>
       <div className="row half-bottom">
-        <div className="col-nine tab-full">
-          <h3>Example Lists</h3>
-          <ol>
-            <li>Here is an example</li>
-            <li>of an ordered list.</li>
-            <li>
-              A parent list item.
-              <ul>
-                <li>one</li>
-                <li>two</li>
-                <li>three</li>
-              </ul>
-            </li>
-            <li>A list item.</li>
-          </ol>
-          <ul className="disc">
-            <li>Here is an example</li>
-            <li>of an unordered list.</li>
-          </ul>
-          <h3>Definition Lists</h3>
-          <h5>a) Multi-line Definitions (default)</h5>
-          <dl>
-            <dt>
-              <strong>This is a term</strong>
-            </dt>
-            <dd>
-              this is the definition of that term, which both live in a <code>dl</code>.
-            </dd>
-            <dt>
-              <strong>Another Term</strong>
-            </dt>
-            <dd>And it gets a definition too, which is this line</dd>
-            <dd>
-              This is a 2<sup>nd</sup> definition for a single term. A <code>dt</code> may be followed by multiple <code>dd</code>s.
-            </dd>
-          </dl>
-        </div>
-        <div className="col-three tab-full">
-          <h3>Headers</h3>
-          <h1>H1 Heading</h1>
-          <h2>H2 Heading</h2>
-          <h3>H3 Heading</h3>
-          <h4>H4 Heading</h4>
-          <h5>H5 Heading</h5>
-          <h6>H6 Heading</h6>
-          <h3>Buttons</h3>
-          <p>
-            <a className="button button-primary full-width" href="http://hitelinformaciok.hu/">
-              Primary Button
-            </a>
-            <a className="button full-width" href="http://hitelinformaciok.hu/">
-              Default Button
-            </a>
-          </p>
-        </div>
-      </div>
-      <div className="row half-bottom">
         <div className="col-six tab-full">
           <h3>Responsive video</h3>
           <div className="fluid-video-wrapper">
@@ -597,41 +543,6 @@ const Main = (props) => (
               allowFullScreen
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             ></iframe>
-          </div>
-        </div>
-      </div>
-      <div className="row">
-        <div className="col-twelve">
-          <h3>Tables</h3>
-          <p>
-            Be sure to use properly formed table markup with <code>&lt;thead&gt;</code> and <code>&lt;tbody&gt;</code> when building a
-            <code>table</code>.
-          </p>
-          <div className="table-responsive">
-            <table>
-              <thead>
-                <tr>
-                  <th>Name</th>
-                  <th>Age</th>
-                  <th>Sex</th>
-                  <th>Location</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Naruto Uzumaki</td>
-                  <td>16</td>
-                  <td>Male</td>
-                  <td>Konoha</td>
-                </tr>
-                <tr>
-                  <td>Sakura Haruno</td>
-                  <td>16</td>
-                  <td>Female</td>
-                  <td>Konoha</td>
-                </tr>
-              </tbody>
-            </table>
           </div>
         </div>
       </div>
