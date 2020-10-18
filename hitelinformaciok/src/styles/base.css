@@ -1,10 +1,15 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-}
-body {
-  margin: 0;
 }
 article,
 aside,
@@ -579,6 +584,10 @@ textarea {
   margin-bottom: 0;
 }
 .half-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   margin-bottom: 1.5rem !important;
 }
 .add-bottom {

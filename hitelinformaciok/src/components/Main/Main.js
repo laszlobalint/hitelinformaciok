@@ -1,7 +1,6 @@
 import React from 'react';
 
 import Aux from '../../hoc/Auxiliary/Auxiliary';
-import ownerShip from '../../images/ownership.png';
 import avatarOne from '../../images/avatars/avatar_1.jpg';
 import avatarTwo from '../../images/avatars/avatar_2.jpg';
 import avatarThree from '../../images/avatars/avatar_3.jpg';
@@ -54,8 +53,8 @@ const Main = (props) => (
     <section id="features">
       <div className="row section-intro">
         <div className="col-twelve with-bottom-line">
-          <h5>Features</h5>
-          <h1>Great features you'll love.</h1>
+          <h5>Ajánlataink</h5>
+          <h1>Megoldást kínálunk terveihez.</h1>
           <p className="lead">
             Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem
             ipsum Consectetur ut in in eu do.
@@ -66,10 +65,10 @@ const Main = (props) => (
         <div className="features-list block-1-3 block-s-1-2 block-tab-full group">
           <div className="bgrid feature">
             <span className="icon">
-              <i className="icon-window"></i>
+              <i className="icon-home"></i>
             </span>
             <div className="service-content">
-              <h3 className="h05">Fully Resposive</h3>
+              <h3 className="h05">Használt ingatlan vásárlása</h3>
               <p>
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
                 ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
@@ -79,10 +78,23 @@ const Main = (props) => (
           </div>
           <div className="bgrid feature">
             <span className="icon">
-              <i className="icon-eye"></i>
+              <i className="icon-dollar"></i>
             </span>
             <div className="service-content">
-              <h3 className="h05">Retina Ready</h3>
+              <h3 className="h05">Új ingatlan vásárlása</h3>
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+                ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                voluptas sit aspernatur aut odit aut fugit.
+              </p>
+            </div>
+          </div>
+          <div className="bgrid feature">
+            <span className="icon">
+              <i className="icon-building"></i>
+            </span>
+            <div className="service-content">
+              <h3 className="h05">Ingatlan építése</h3>
               <p>
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
                 ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
@@ -95,7 +107,7 @@ const Main = (props) => (
               <i className="icon-paint-brush"></i>
             </span>
             <div className="service-content">
-              <h3 className="h05">Stylish Design</h3>
+              <h3 className="h05">Ingatlan felújítása</h3>
               <p>
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
                 ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
@@ -105,10 +117,10 @@ const Main = (props) => (
           </div>
           <div className="bgrid feature">
             <span className="icon">
-              <i className="icon-file"></i>
+              <i className="icon-user-add"></i>
             </span>
             <div className="service-content">
-              <h3 className="h05">Clean Code</h3>
+              <h3 className="h05">Ingatlan bővítése</h3>
               <p>
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
                 ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
@@ -118,10 +130,10 @@ const Main = (props) => (
           </div>
           <div className="bgrid feature">
             <span className="icon">
-              <i className="icon-layers"></i>
+              <i className="icon-refresh"></i>
             </span>
             <div className="service-content">
-              <h3 className="h05">Easy To Customize</h3>
+              <h3 className="h05">Ingatlan korszerűsítése</h3>
               <p>
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
                 ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
@@ -131,10 +143,36 @@ const Main = (props) => (
           </div>
           <div className="bgrid feature">
             <span className="icon">
-              <i className="icon-gift"></i>
+              <i className="icon-wallet"></i>
             </span>
             <div className="service-content">
-              <h3 className="h05">Free of Charge</h3>
+              <h3 className="h05">Szabad felhasználás</h3>
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+                ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                voluptas sit aspernatur aut odit aut fugit.
+              </p>
+            </div>
+          </div>
+          <div className="bgrid feature">
+            <span className="icon">
+              <i className="icon-battery-low"></i>
+            </span>
+            <div className="service-content">
+              <h3 className="h05">Hitelkiváltás</h3>
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+                ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                voluptas sit aspernatur aut odit aut fugit.
+              </p>
+            </div>
+          </div>
+          <div className="bgrid feature">
+            <span className="icon">
+              <i className="icon-fast-forward"></i>
+            </span>
+            <div className="service-content">
+              <h3 className="h05">Egyéb célokra</h3>
               <p>
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
                 ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
@@ -145,7 +183,6 @@ const Main = (props) => (
         </div>
       </div>
     </section>
-    ;
     <section id="pricing">
       <div className="row section-intro">
         <div className="col-twelve with-bottom-line">
@@ -161,8 +198,8 @@ const Main = (props) => (
         <div className="pricing-tables block-1-4 group">
           <div className="bgrid">
             <div className="price-block">
-              <div className="top-part">
-                <h3 className="plan-title">Starter</h3>
+              <div className="top-part" data-info="Magánszemélyeknek">
+                <h3 className="plan-title">Lakossági (személyi célú) hitelek</h3>
                 <p className="plan-price">
                   <sup>$</sup>4.99
                 </p>
@@ -192,8 +229,8 @@ const Main = (props) => (
           </div>
           <div className="bgrid">
             <div className="price-block primary">
-              <div className="top-part" data-info="recommended">
-                <h3 className="plan-title">Standard</h3>
+              <div className="top-part" data-info="Vállatoknak">
+                <h3 className="plan-title">Vállalati (céges) hitelek</h3>
                 <p className="plan-price">
                   <sup>$</sup>9.99
                 </p>
@@ -223,8 +260,8 @@ const Main = (props) => (
           </div>
           <div className="bgrid">
             <div className="price-block">
-              <div className="top-part">
-                <h3 className="plan-title">Premium</h3>
+              <div className="top-part" data-info="Mindenkinek">
+                <h3 className="plan-title">Pályázatírás és tanácsadás</h3>
                 <p className="plan-price">
                   <sup>$</sup>19.99
                 </p>
@@ -253,9 +290,9 @@ const Main = (props) => (
             </div>
           </div>
           <div className="bgrid">
-            <div className="price-block">
-              <div className="top-part">
-                <h3 className="plan-title">Ultimate</h3>
+            <div className="price-block primary">
+              <div className="top-part" data-info="Mindenkinek">
+                <h3 className="plan-title">Biztosítási tanácsadás</h3>
                 <p className="plan-price">
                   <sup>$</sup>29.99
                 </p>
@@ -286,7 +323,6 @@ const Main = (props) => (
         </div>
       </div>
     </section>
-    ;
     <section id="testimonials">
       <div className="row">
         <div className="col-twelve">
@@ -356,42 +392,42 @@ const Main = (props) => (
       <div className="row faq-content">
         <div className="q-and-a block-1-2 block-tab-full group">
           <div className="bgrid">
-            <h3>What are the security features?</h3>
+            <h3>Milyen feltételeknek kell megfelelni a hiteligényléskor?</h3>
             <p>
               Lorem ipsum Id in magna ad culpa dolor eu aute non amet aute ea in consectetur in quis nostrud anim proident dolore in sed et
               mollit voluptate culpa irure consequat laborum ea sint in mollit adipisicing cupidatat.
             </p>
           </div>
           <div className="bgrid">
-            <h3>How can I update my user profile?</h3>
+            <h3>Kihez fordulhatok, ha több ajánlat között kell választanom?</h3>
             <p>
               Lorem ipsum Id in magna ad culpa dolor eu aute non amet aute ea in consectetur in quis nostrud anim proident dolore in sed et
               mollit voluptate culpa irure consequat laborum ea sint in mollit adipisicing cupidatat.
             </p>
           </div>
           <div className="bgrid">
-            <h3>What features are not included in the free version?</h3>
+            <h3>Melyik hitelkonstrukciók részesülnek állami támogatásban?</h3>
             <p>
               Lorem ipsum Id in magna ad culpa dolor eu aute non amet aute ea in consectetur in quis nostrud anim proident dolore in sed et
               mollit voluptate culpa irure consequat laborum ea sint in mollit adipisicing cupidatat.
             </p>
           </div>
           <div className="bgrid">
-            <h3>Can I upgrade my account from Starter to Premium?</h3>
+            <h3>Hogyan érdemes választani a pénzintézetek ajánlatai között?</h3>
             <p>
               Lorem ipsum Id in magna ad culpa dolor eu aute non amet aute ea in consectetur in quis nostrud anim proident dolore in sed et
               mollit voluptate culpa irure consequat laborum ea sint in mollit adipisicing cupidatat.
             </p>
           </div>
           <div className="bgrid">
-            <h3>Where can I found all my uploads?</h3>
+            <h3>Mi történik az általam szolgáltatott személyes adatokkal?</h3>
             <p>
               Lorem ipsum Id in magna ad culpa dolor eu aute non amet aute ea in consectetur in quis nostrud anim proident dolore in sed et
               mollit voluptate culpa irure consequat laborum ea sint in mollit adipisicing cupidatat.
             </p>
           </div>
           <div className="bgrid">
-            <h3>How long can I use the free trial version?</h3>
+            <h3>Mennyibe kerül egy hitelképességi vizsgálat elkészítése?</h3>
             <p>
               Lorem ipsum Id in magna ad culpa dolor eu aute non amet aute ea in consectetur in quis nostrud anim proident dolore in sed et
               mollit voluptate culpa irure consequat laborum ea sint in mollit adipisicing cupidatat.
@@ -421,116 +457,55 @@ const Main = (props) => (
         </div>
       </div>
     </section>
-    ;
     <section id="cta">
       <div className="row cta-content">
         <div className="col-twelve">
-          <h1 className="h01">Get started now. Try Lhander free for 30 days.</h1>
-          <p className="lead">Download the app now. Available on the:</p>
-          <ul className="stores">
-            <li className="app-store">
-              <a href="http://hitelinformaciok.hu/" className="button round large" title="">
-                <i className="icon ion-social-apple"></i>App Store
-              </a>
-            </li>
+          <h1 className="h01">Ne csak tervezze, valósítsa is meg. </h1>
+          <p className="lead">Segítünk benne. Miként érdeklődik:</p>
+          <ul className="clients">
             <li className="play-store">
-              <a href="http://hitelinformaciok.hu/" className="button round large" title="">
-                <i className="icon ion-social-android"></i>Play Store
+              <a href="http://hitelinformaciok.hu/" className="button round large" title="Lakossági ügyfél">
+                <i className="icon ion-home"></i>Lakossági ügyfél
               </a>
             </li>
             <li className="windows-store">
-              <a href="http://hitelinformaciok.hu/" className="button round large" title="">
-                <i className="icon ion-social-windows"></i>Win Store
+              <a href="http://hitelinformaciok.hu/" className="button round large" title="Vállalati ügyfél">
+                <i className="icon ion-calculator"></i>Vállalati ügyfél
               </a>
             </li>
           </ul>
         </div>
       </div>
     </section>
-    ;
     <section id="styles">
-      <div className="row">
-        <div className="col-twelve tab-full">
-          <h1>Impresszum és jogok</h1>
-          <p className="lead">
-            A Hitel Expert Kft. tájékoztatja Önt, hogy weboldalának böngészése egyúttal az alábbi feltételek elfogadását is jelenti. Kérjük,
-            az alábbiakat figyelmesen olvassa el.
-          </p>
-        </div>
-      </div>
-      <div className="row">
+      <div className="row" style={{ marginTop: '3rem' }}>
         <div className="col-six tab-full">
-          <p>
-            <a href="http://hitelinformaciok.hu/">
-              <img
-                style={{ width: '130px', height: '130px', borderRadius: '999px' }}
-                className="pull-left"
-                src={ownerShip}
-                alt="Impresszum és jogok"
-              />
-            </a>
-            A hitelinformaciok.hu weboldal teljes tartalma vagy bármely részlete szerzői jogvédelem alá esik. Az ehhez fűződő jogok
-            gyakorlására kizárólag a hitelinformaciok.hu tulajdonosa jogosult.
-          </p>
-          <p>
-            A hitelinformaciok.hu honlap tulajdonosának előzetes írásbeli engedélye nélkül tilos a weboldal tartalmának egészét vagy részeit
-            bármilyen egyéb módon felhasználni, reprodukálni, átruházni, terjeszteni, átdolgozni, vagy számítástechnikai adatrendszerben
-            tárolni.
-          </p>
-        </div>
-        <div className="col-six tab-full">
-          <p>
-            A művek bármilyen jogosulatlan felhasználása szerzői jogsértést valósít meg, amely a Btk. 329/A § alapján akár öt (5) évig
-            terjedő szabadságvesztéssel is büntethető.
-          </p>
-          <p>
-            A Btk. 329/A. § törvényi tényállása szerint, aki másnak a szerzői jogról szóló törvény alapján fennálló szerzői vagy ahhoz
-            kapcsolódó jogát haszonszerzés céljából, vagy vagyoni hátrányt okozva megsérti, vétséget követ el.
-          </p>
-          <p>
-            <i>
-              <strong>Hitel Expert Kft.</strong>
-            </i>
-          </p>
-          <p>
-            <i>1035 Budapest, Vihar utca 18.</i>
-          </p>
-        </div>
-      </div>
-      <div className="row">
-        <div className="col-six tab-full">
-          <h3>Pull Quotes</h3>
+          <h3>Pénz szerepe</h3>
           <aside className="pull-quote">
             <blockquote>
               <p>
-                It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has
-                no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name
-                of Lorem Ipsum decided to leave for the far World of Grammar.
+                A pénz biztonságot, és választást ad. Másféleképpen tudsz döntést hozni, ha sok pénzed van. De, ha nincs semmid, megvan az
+                az előnyöd, a félelem nélküli hozzáállásod, hogy nem veszthetsz semmit.
               </p>
+              <cite>
+                <a href="http://hitelinformaciok.hu/">Simon Cowell</a>
+              </cite>
             </blockquote>
           </aside>
         </div>
         <div className="col-six tab-full">
-          <h3>Block Quotes</h3>
-          <blockquote cite="http://where-i-got-my-info-from.com">
-            <p>
-              Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is
-              great work. And the only way to do great work is to love what you do. If you haven't found it yet, keep looking. Don't settle.
-              As with all matters of the heart, you'll know when you find it.
-            </p>
-            <cite>
-              <a href="http://hitelinformaciok.hu/">Steve Jobs</a>
-            </cite>
-          </blockquote>
+          <h3>Vállalkozószellem</h3>
           <blockquote>
-            <p>Good design is as little design as possible.</p>
-            <cite>Dieter Rams</cite>
+            <p>Hány milliomost ismersz, akik egy takarékbetét-számlába való befektetésnek köszönhetően gazdagodtak meg? Zárom beszédem.</p>
+            <cite>
+              <a href="http://hitelinformaciok.hu/">Robert G. Allen</a>
+            </cite>
           </blockquote>
         </div>
       </div>
       <div className="row half-bottom">
         <div className="col-six tab-full">
-          <h3>Responsive video</h3>
+          <h3>Tájékozódjon a befektetési lehetőségeiről</h3>
           <div className="fluid-video-wrapper">
             <iframe
               title="loanVideo"

@@ -13,9 +13,9 @@ const Header = (props) => (
         <nav id="main-nav-wrap">
           <ul className="main-navigation">
             <li>
-              <a href="http://hitelinformaciok.hu/" title="Rólunk">
+              <NavLink to="/" title="Rólunk" exact>
                 Rólunk
-              </a>
+              </NavLink>
             </li>
             <li>
               <a href="http://hitelinformaciok.hu/" title="Ajánlataink">
@@ -33,12 +33,17 @@ const Header = (props) => (
               </a>
             </li>
             <li>
+              <NavLink to="/impressum" title="Impresszum">
+                Impresszum
+              </NavLink>
+            </li>
+            <li>
               <a href="http://hitelinformaciok.hu/" title="Kapcsolat">
                 Kapcsolat
               </a>
             </li>
             <li className="highlight with-sep">
-              <NavLink to="/calculator" exact>
+              <NavLink to="/calculator" title="Hitelkalkulációk">
                 Hitelkalkulációk
               </NavLink>
             </li>

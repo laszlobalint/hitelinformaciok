@@ -1,14 +1,16 @@
 import React from 'react';
 
+import { NavLink } from 'react-router-dom';
+
 const Footer = (props) => (
   <footer>
     <div className="footer-main">
       <div className="row">
         <div className="col-four tab-full mob-full footer-info">
           <div className="footer-logo"></div>
-          <a className="highlight with-sep" href="http://hitelinformaciok.hu/" title="Hitelkalkulációk">
+          <NavLink to="/calculator" title="Hitelkalkulációk">
             Hitelkalkulációk
-          </a>
+          </NavLink>
           <p>
             1035 Budapest
             <br />
@@ -21,7 +23,9 @@ const Footer = (props) => (
           <h4>Linkek</h4>
           <ul>
             <li>
-              <a href="http://hitelinformaciok.hu/">Rólunk</a>
+              <NavLink to="/" title="Rólunk" exact>
+                Rólunk
+              </NavLink>
             </li>
             <li>
               <a href="http://hitelinformaciok.hu/">Ajánlataink</a>
@@ -33,6 +37,11 @@ const Footer = (props) => (
               <a href="http://hitelinformaciok.hu/">GYIK</a>
             </li>
             <li>
+              <NavLink to="/impressum" title="Impresszum">
+                Impresszum
+              </NavLink>
+            </li>
+            <li>
               <a href="http://hitelinformaciok.hu/">Kapcsolat</a>
             </li>
           </ul>
@@ -41,19 +50,29 @@ const Footer = (props) => (
           <h4>Közösségek</h4>
           <ul>
             <li>
-              <a href="https://www.facebook.com/">Facebook</a>
+              <a href="https://www.facebook.com/hitelinformaciok" target="_blank" rel="noopener noreferrer">
+                Facebook
+              </a>
             </li>
             <li>
-              <a href="https://twitter.com/">Twitter</a>
+              <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+                Twitter
+              </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/">Instagram</a>
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                Instagram
+              </a>
             </li>
             <li>
-              <a href="https://www.skype.com/">Skype</a>
+              <a href="https://www.skype.com/" target="_blank" rel="noopener noreferrer">
+                Skype
+              </a>
             </li>
             <li>
-              <a href="https://www.skype.com/">Weboldal</a>
+              <a href="https://hitelinformaciok.hu/" target="_blank" rel="noopener noreferrer">
+                Weboldal
+              </a>
             </li>
           </ul>
         </div>

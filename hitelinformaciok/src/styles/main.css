@@ -1499,7 +1499,8 @@ a.menu-toggle {
 .pricing-content .primary .top-part {
   background: #05bca9;
 }
-.pricing-content .primary .top-part::before {
+.pricing-content .primary .top-part::before,
+.pricing-content .top-part::before {
   content: attr(data-info);
   display: block;
   min-height: 48px;
@@ -1818,62 +1819,63 @@ a.menu-toggle {
 .cta-content p {
   color: rgba(255, 255, 255, 0.8);
 }
-.cta-content .stores {
+.cta-content .clients {
   margin: 0;
   padding: 0;
   display: block;
 }
-.cta-content .stores li {
+.cta-content .clients li {
   padding: 0;
   display: inline-block;
 }
-.cta-content .stores li .button {
+.cta-content .clients li .button {
   background: #04a393;
   color: #ffffff;
   margin-right: 12px;
   display: block;
   line-height: 60px;
 }
-.cta-content .stores li .button:hover,
-.cta-content .stores li .button:focus {
+.cta-content .clients li .button:hover,
+.cta-content .clients li .button:focus {
   background: #049485;
 }
-.cta-content .stores li .button i {
+.cta-content .clients li .button i {
   font-size: 18px;
   line-height: inherit;
   margin-right: 8px;
 }
-.cta-content .stores li .button i.ion-social-windows {
+.cta-content .clients li .button i.ion-calculator,
+.cta-content .clients li .button i.ion-home {
   font-size: 15px;
 }
-.cta-content .stores li:last-child .button {
+.cta-content .clients li:last-child .button {
   margin-right: 0;
 }
 @media only screen and (max-width: 650px) {
   .cta-content {
     max-width: 650px;
   }
-  .cta-content .stores li {
+  .cta-content .clients li {
     display: block;
   }
-  .cta-content .stores li .button {
+  .cta-content .clients li .button {
     width: 300px;
     display: block;
     margin-left: auto !important;
     margin-right: auto !important;
     margin-bottom: 1.8rem;
   }
-  .cta-content .stores li .button::before {
+  .cta-content .clients li .button::before {
     display: none;
   }
 }
 @media only screen and (max-width: 600px) {
-  .cta-content .stores li .button {
+  .cta-content .clients li .button {
     width: 70%;
   }
 }
 @media only screen and (max-width: 400px) {
-  .cta-content .stores li .button {
+  .cta-content .clients li .button {
     width: 80%;
   }
 }

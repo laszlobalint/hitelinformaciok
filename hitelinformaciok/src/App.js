@@ -13,12 +13,16 @@ const App = (props) => {
   const Calculator = React.lazy(() => {
     return import('./containers/Calculator/Calculator');
   });
+  const Impressum = React.lazy(() => {
+    return import('./components/Impressum/Impressum');
+  });
 
   const fallback = <article style={{ textAlign: 'center' }}>Hitelinformációk.hu betöltése...</article>;
 
   const routes = (
     <Switch>
       <Route path="/calculator" render={(props) => <Calculator {...props} />} />
+      <Route path="/impressum" render={(props) => <Impressum {...props} />} />
       <Route path="/" component={Main} />
       <Redirect to="/" />
     </Switch>
