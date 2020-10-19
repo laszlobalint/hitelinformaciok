@@ -9,7 +9,7 @@ const Menu = (props) => {
       label: 'Magánszemélyek',
       key: 'residental',
       items: (
-        <ul>
+        <ul className={classes.Items}>
           <li>Lakáshitel</li>
           <li>Hitelkiváltás</li>
           <li>Szabadfelhasználás</li>
@@ -23,7 +23,7 @@ const Menu = (props) => {
       label: 'Mikro- és kisvállalkozások',
       key: 'small-business',
       items: (
-        <ul>
+        <ul className={classes.Items}>
           <li>Jelzálogalapú hitel</li>
           <li>Folyószámlahitel</li>
           <li>Forgóeszközhitel</li>
@@ -39,7 +39,7 @@ const Menu = (props) => {
       label: 'Közép- és nagyvállalatok',
       key: 'large-business',
       items: (
-        <ul>
+        <ul className={classes.Items}>
           <li>Jelzálogalapú hitel</li>
           <li>Folyószámlahitel</li>
           <li>Forgóeszközhitel</li>
@@ -56,7 +56,7 @@ const Menu = (props) => {
       label: 'Egyéb szolgáltatások',
       key: 'other-services',
       items: (
-        <ul>
+        <ul className={classes.Items}>
           <li>Biztosítási tanácsadás</li>
           <li>Pályázati tanácsadás</li>
           <li>Befektetési tanácsadás</li>
@@ -68,19 +68,19 @@ const Menu = (props) => {
     <ReactMegaMenu
       styleConfig={{
         menuProps: {
-          className: [classes.Menu, classes.MenuTop, 'row'].join(' '),
+          className: [classes.Menu, classes.MenuTop].join(' '),
         },
         contentProps: {
-          className: [classes.Content, classes.MenuTop, 'row'].join(' '),
+          className: [classes.Content, classes.MenuTop].join(' '),
         },
         menuItemProps: {
-          className: [classes.Item, classes.MenuTop, 'row'].join(' '),
+          className: [classes.Item, classes.MenuTop].join(' '),
         },
         menuItemSelectedProps: {
-          className: [classes.Selected, classes.MenuTop, 'row'].join(' '),
+          className: [classes.Selected, classes.MenuTop].join(' '),
         },
         containerProps: {
-          className: [classes.Container, classes.MenuTop, 'row'].join(' '),
+          className: [classes.Container, classes.MenuTop].join(' '),
         },
       }}
       data={MENU_ITEMS}

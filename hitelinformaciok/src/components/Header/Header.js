@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
+import classes from './Header.module.css';
 import Aux from '../../hoc/Auxiliary/Auxiliary';
 import Menu from '../Menu/Menu';
 
@@ -11,18 +12,21 @@ const Header = (props) => (
         <div className="logo">
           <a href="http://hitelinformaciok.hu/">Hitelinformaciok.hu</a>
         </div>
-        <Menu />
+        <div className={classes.Dropdown}>
+          <span className={classes.Offers}>Ajánlataink</span>
+          <span className="icon">
+            <i className="icon-download"></i>
+          </span>
+          <div className={classes.DropdownContent}>
+            <Menu />
+          </div>
+        </div>
         <nav id="main-nav-wrap">
           <ul className="main-navigation">
             <li>
               <NavLink to="/" title="Rólunk" exact>
                 Rólunk
               </NavLink>
-            </li>
-            <li>
-              <a href="http://hitelinformaciok.hu/" title="Ajánlataink">
-                Ajánlataink
-              </a>
             </li>
             <li>
               <a href="http://hitelinformaciok.hu/" title="Ajánlatkérés">
@@ -51,7 +55,7 @@ const Header = (props) => (
             </li>
           </ul>
         </nav>
-        <a className="menu-toggle" href="http://hitelinformaciok.hu/" title="Menü">
+        <a className="menu-toggle" href="http://hitelinformaciok.hu/" title="Menü megnyitása">
           <span>Menü</span>
         </a>
       </div>

@@ -1,38 +1,30 @@
 .MenuTop {
-  font-family: inherit;
-  z-index: 9999;
+  z-index: 99999;
+  width: fit-content;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-li {
+.Items li,
+.Selected {
+  padding-right: 1rem;
+  cursor: pointer;
   list-style: none;
 }
 
-.Menu {
-  height: auto;
-  width: auto;
-  padding: 2px;
-  margin: 0;
-}
-
-.Container {
-  padding: 2px;
-}
-
-.Content {
-  height: auto;
-  width: auto;
-  padding: 2px;
-}
-
-.Item {
-  padding: 2px;
-  height: auto;
-  width: auto;
-}
-
+.Items li:hover,
 .Selected {
-  padding: 2px;
-  height: auto;
-  width: auto;
-  background-color: grey;
+  color: #ffffff;
+  background-color: #05bca9;
+}
+
+.Menu,
+.Content,
+.Item {
+  padding-right: 1rem;
+  width: max-content;
+}
+
+.Container,
+.Content {
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }

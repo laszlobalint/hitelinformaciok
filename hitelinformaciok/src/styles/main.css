@@ -725,8 +725,9 @@ header .logo {
   margin-top: 2px;
   z-index: 600;
   position: absolute;
-  left: 35px;
+  left: 0px;
   top: 50%;
+  margin-left: 10px;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
