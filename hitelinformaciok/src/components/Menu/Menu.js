@@ -68,19 +68,19 @@ const Menu = (props) => {
     <ReactMegaMenu
       styleConfig={{
         menuProps: {
-          className: [classes.Menu, classes.MenuTop].join(' '),
+          className: [classes.Menu, classes.MenuTop, 'row'].join(' '),
         },
         contentProps: {
-          className: [classes.Content, classes.MenuTop].join(' '),
+          className: [classes.Content, classes.MenuTop, 'row'].join(' '),
         },
         menuItemProps: {
-          className: [classes.Item, classes.MenuTop].join(' '),
+          className: [classes.Item, classes.MenuTop, 'row'].join(' '),
         },
         menuItemSelectedProps: {
-          className: [classes.Selected, classes.MenuTop].join(' '),
+          className: [classes.Selected, classes.MenuTop, 'row'].join(' '),
         },
         containerProps: {
-          className: [classes.Container, classes.MenuTop].join(' '),
+          className: [classes.Container, classes.MenuTop, 'row'].join(' '),
         },
       }}
       data={MENU_ITEMS}

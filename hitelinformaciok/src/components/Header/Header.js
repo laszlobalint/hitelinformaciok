@@ -9,8 +9,9 @@ const Header = (props) => (
     <header>
       <div className="row">
         <div className="logo">
-          <a href="index.html">Hitelinformaciok.hu</a>
+          <a href="http://hitelinformaciok.hu/">Hitelinformaciok.hu</a>
         </div>
+        <Menu />
         <nav id="main-nav-wrap">
           <ul className="main-navigation">
             <li>
@@ -62,14 +63,13 @@ const Header = (props) => (
           <div className="col-twelve">
             <h5>Üdvözli a Hitelinformációk.hu.</h5>
             <h1>Időt és pénzt spórolhat meg hitelkalkulátorunkkal.</h1>
-            <a className="button stroke smoothscroll" href="http://hitelinformaciok.hu/" title="calculators">
+            <NavLink className="button stroke smoothscroll" to="/calculator" title="Hitelkalkulátor">
               Számoljon beruházásához
-            </a>
+            </NavLink>
           </div>
         </div>
       </div>
     </section>
-    <Menu />
   </Aux>
 );
 
