@@ -22,7 +22,7 @@ const Header = (props) => (
           </div>
         </div>
         <nav id="main-nav-wrap">
-          <ul className="main-navigation">
+          <ul id="main-navigation" className="main-navigation">
             <li>
               <NavLink to="/" title="Rólunk" exact>
                 Rólunk
@@ -55,7 +55,7 @@ const Header = (props) => (
             </li>
           </ul>
         </nav>
-        <a className="menu-toggle" href="http://hitelinformaciok.hu/" title="Menü megnyitása">
+        <a id="menu-toggle" className="menu-toggle" href="http://hitelinformaciok.hu/" title="Menü megnyitása">
           <span>Menü</span>
         </a>
       </div>
@@ -67,7 +67,7 @@ const Header = (props) => (
           <div className="col-twelve">
             <h5>Üdvözli a Hitelinformációk.hu.</h5>
             <h1>Időt és pénzt spórolhat meg hitelkalkulátorunkkal.</h1>
-            <NavLink className="button stroke smoothscroll" to="/calculator" title="Hitelkalkulátor">
+            <NavLink className="button stroke" to="/calculator" title="Hitelkalkulátor">
               Számoljon beruházásához
             </NavLink>
           </div>
