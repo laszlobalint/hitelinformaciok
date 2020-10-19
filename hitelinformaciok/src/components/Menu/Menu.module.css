@@ -1,0 +1,42 @@
+.MenuTop {
+  z-index: 9999;
+}
+
+li {
+  list-style: none;
+}
+
+.Menu {
+  border: 2px solid red;
+  height: auto;
+  width: auto;
+  padding: 2px;
+  margin: 0;
+}
+
+.Container {
+  border: 2px solid blue;
+  padding: 2px;
+}
+
+.Content {
+  height: auto;
+  width: auto;
+  border: 2px solid yellow;
+  padding: 2px;
+}
+
+.Item {
+  border: 2px solid green;
+  padding: 2px;
+  height: auto;
+  width: auto;
+}
+
+.Selected {
+  border: 2px solid purple;
+  padding: 2px;
+  height: auto;
+  width: auto;
+  background-color: grey;
+}

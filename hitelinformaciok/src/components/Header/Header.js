@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 import Aux from '../../hoc/Auxiliary/Auxiliary';
+import Menu from '../Menu/Menu';
 
 const Header = (props) => (
   <Aux>
@@ -68,6 +69,7 @@ const Header = (props) => (
         </div>
       </div>
     </section>
+    <Menu />
   </Aux>
 );
 
