@@ -34,9 +34,9 @@ const Header = (props) => (
               </a>
             </li>
             <li>
-              <a href="http://hitelinformaciok.hu/" title="Gyakran ismételt kérdések">
-                GYIK
-              </a>
+              <NavLink to="/faq" title="Gyakran ismételt kérdések" exact>
+                GY.I.K.
+              </NavLink>
             </li>
             <li>
               <NavLink to="/impressum" title="Impresszum">
@@ -44,9 +44,9 @@ const Header = (props) => (
               </NavLink>
             </li>
             <li>
-              <a href="http://hitelinformaciok.hu/" title="Kapcsolat">
+              <NavLink to="/contact" title="Kapcsolat">
                 Kapcsolat
-              </a>
+              </NavLink>
             </li>
             <li className="highlight with-sep">
               <NavLink to="/calculator" title="Hitelkalkulációk">

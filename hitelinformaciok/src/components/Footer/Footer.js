@@ -34,7 +34,7 @@ const Footer = (props) => (
               <a href="http://hitelinformaciok.hu/">Ajánlatkérés</a>
             </li>
             <li>
-              <a href="http://hitelinformaciok.hu/">GYIK</a>
+              <a href="http://hitelinformaciok.hu/">GY.I.K.</a>
             </li>
             <li>
               <NavLink to="/impressum" title="Impresszum">

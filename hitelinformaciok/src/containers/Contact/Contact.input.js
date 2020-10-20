@@ -1,7 +1,9 @@
-export const subscriptionFormControls = {
+export const contactFormControls = {
   name: {
     elementType: 'input',
     elementConfig: {
+      id: 'NAME',
+      name: 'NAME',
       type: 'text',
       placeholder: 'Írja be a nevét...',
     },
@@ -18,6 +20,8 @@ export const subscriptionFormControls = {
   email: {
     elementType: 'input',
     elementConfig: {
+      id: 'EMAIL',
+      name: 'EMAIL',
       type: 'email',
       placeholder: 'Írja be az e-mail címét...',
     },
@@ -35,6 +39,8 @@ export const subscriptionFormControls = {
   phone: {
     elementType: 'input',
     elementConfig: {
+      id: 'PHONE',
+      name: 'PHONE',
       type: 'tel',
       placeholder: '(+36)-?0/_ _ _ _ - _ _ _',
     },
@@ -51,7 +57,9 @@ export const subscriptionFormControls = {
   message: {
     elementType: 'textarea',
     elementConfig: {
-      placeholder: 'Írja le üzenetetét és/vagy kérdését...',
+      id: 'MESSAGE',
+      name: 'MESSAGE',
+      placeholder: 'Írja le üzenetetét és kérdéseit. Kollégáink egy napon belül megkeresik...',
       rows: 4,
       cols: 36,
     },

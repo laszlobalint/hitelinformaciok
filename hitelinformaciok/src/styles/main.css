@@ -1304,7 +1304,7 @@ a.menu-toggle {
 }
 @media only screen and (max-width: 768px) {
   #process {
-    padding-bottom: 27rem;
+    padding-bottom: 15rem;
   }
   .process-content .right-side,
   .process-content .left-side {
@@ -1318,21 +1318,15 @@ a.menu-toggle {
     padding-bottom: 0;
   }
   .process-content .image-part {
-    width: 300px;
-    position: absolute;
-    bottom: -630px;
-    left: 50%;
-    margin-left: -150px;
+    display: none;
   }
 }
 @media only screen and (max-width: 400px) {
   #process {
-    padding-bottom: 21rem;
+    padding-bottom: 10rem;
   }
   .process-content .image-part {
-    width: 230px;
-    bottom: -540px;
-    margin-left: -115px;
+    display: none;
   }
 }
 #features {

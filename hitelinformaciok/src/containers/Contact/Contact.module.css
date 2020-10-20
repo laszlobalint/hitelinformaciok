@@ -1,0 +1,93 @@
+.Contact,
+.Contact > form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem;
+}
+
+.Contact .Intro {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.Contact > form {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.Contact > form > button {
+  width: 30%;
+  margin: 0 auto;
+}
+
+.Contact:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url('../../images/subscription.jpg');
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+.Sending,
+.Error,
+.Success {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+  height: 20vh;
+}
+
+.Sending {
+  color: #05bca9;
+}
+
+.Error {
+  color: #cc0033;
+}
+
+.Success {
+  color: #252525;
+}
+
+@media only screen and (max-width: 1024px) {
+  .Contact > form,
+  .Contact .Intro {
+    width: 70%;
+    padding: 0;
+  }
+
+  .Contact > form > button {
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .Contact > form,
+  .Contact .Intro {
+    width: 80%;
+    padding: 0;
+  }
+
+  .Contact > form > button {
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .Contact > form,
+  .Contact .Intro {
+    width: 100%;
+    padding: 0;
+  }
+
+  .Contact > form > button {
+    padding: 0;
+  }
+}

@@ -201,9 +201,9 @@ const Main = (props) => (
               <div className="top-part" data-info="Magánszemélyeknek">
                 <h3 className="plan-title">Lakossági (személyi célú) hitelek</h3>
                 <p className="plan-price">
-                  <sup>$</sup>4.99
+                  <sup>HUF</sup>4.99
                 </p>
-                <p className="price-month">Per month</p>
+                <p className="price-month">Havonta</p>
                 <p className="price-meta">Billed Annually.</p>
               </div>
               <div className="bottom-part">
@@ -232,9 +232,9 @@ const Main = (props) => (
               <div className="top-part" data-info="Vállatoknak">
                 <h3 className="plan-title">Vállalati (céges) hitelek</h3>
                 <p className="plan-price">
-                  <sup>$</sup>9.99
+                  <sup>HUF</sup>9.99
                 </p>
-                <p className="price-month">Per month</p>
+                <p className="price-month">Havonta</p>
                 <p className="price-meta">Billed Annually.</p>
               </div>
               <div className="bottom-part">
@@ -263,9 +263,9 @@ const Main = (props) => (
               <div className="top-part" data-info="Mindenkinek">
                 <h3 className="plan-title">Pályázatírás és tanácsadás</h3>
                 <p className="plan-price">
-                  <sup>$</sup>19.99
+                  <sup>HUF</sup>19.99
                 </p>
-                <p className="price-month">Per month</p>
+                <p className="price-month">Havonta</p>
                 <p className="price-meta">Billed Annually.</p>
               </div>
               <div className="bottom-part">
@@ -294,7 +294,7 @@ const Main = (props) => (
               <div className="top-part" data-info="Mindenkinek">
                 <h3 className="plan-title">Biztosítási tanácsadás</h3>
                 <p className="plan-price">
-                  <sup>$</sup>29.99
+                  <sup>HUF</sup>29.99
                 </p>
                 <p className="price-month">Per month</p>
                 <p className="price-meta">Billed Annually.</p>
@@ -375,85 +375,6 @@ const Main = (props) => (
               </p>
             </li>
           </ul>
-        </div>
-      </div>
-    </section>
-    <section id="faq">
-      <div className="row section-intro">
-        <div className="col-twelve with-bottom-line">
-          <h5>GY.I.K.</h5>
-          <h1>Kérdések és válaszok.</h1>
-          <p className="lead">
-            Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem
-            ipsum Consectetur ut in in eu do.
-          </p>
-        </div>
-      </div>
-      <div className="row faq-content">
-        <div className="q-and-a block-1-2 block-tab-full group">
-          <div className="bgrid">
-            <h3>Milyen feltételeknek kell megfelelni a hiteligényléskor?</h3>
-            <p>
-              Lorem ipsum Id in magna ad culpa dolor eu aute non amet aute ea in consectetur in quis nostrud anim proident dolore in sed et
-              mollit voluptate culpa irure consequat laborum ea sint in mollit adipisicing cupidatat.
-            </p>
-          </div>
-          <div className="bgrid">
-            <h3>Kihez fordulhatok, ha több ajánlat között kell választanom?</h3>
-            <p>
-              Lorem ipsum Id in magna ad culpa dolor eu aute non amet aute ea in consectetur in quis nostrud anim proident dolore in sed et
-              mollit voluptate culpa irure consequat laborum ea sint in mollit adipisicing cupidatat.
-            </p>
-          </div>
-          <div className="bgrid">
-            <h3>Melyik hitelkonstrukciók részesülnek állami támogatásban?</h3>
-            <p>
-              Lorem ipsum Id in magna ad culpa dolor eu aute non amet aute ea in consectetur in quis nostrud anim proident dolore in sed et
-              mollit voluptate culpa irure consequat laborum ea sint in mollit adipisicing cupidatat.
-            </p>
-          </div>
-          <div className="bgrid">
-            <h3>Hogyan érdemes választani a pénzintézetek ajánlatai között?</h3>
-            <p>
-              Lorem ipsum Id in magna ad culpa dolor eu aute non amet aute ea in consectetur in quis nostrud anim proident dolore in sed et
-              mollit voluptate culpa irure consequat laborum ea sint in mollit adipisicing cupidatat.
-            </p>
-          </div>
-          <div className="bgrid">
-            <h3>Mi történik az általam szolgáltatott személyes adatokkal?</h3>
-            <p>
-              Lorem ipsum Id in magna ad culpa dolor eu aute non amet aute ea in consectetur in quis nostrud anim proident dolore in sed et
-              mollit voluptate culpa irure consequat laborum ea sint in mollit adipisicing cupidatat.
-            </p>
-          </div>
-          <div className="bgrid">
-            <h3>Mennyibe kerül egy hitelképességi vizsgálat elkészítése?</h3>
-            <p>
-              Lorem ipsum Id in magna ad culpa dolor eu aute non amet aute ea in consectetur in quis nostrud anim proident dolore in sed et
-              mollit voluptate culpa irure consequat laborum ea sint in mollit adipisicing cupidatat.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div className="row section-ads">
-        <div className="col-twelve">
-          <div className="ad-content">
-            <h2 className="h01">
-              <a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Styleshout Recommends Dreamhost.</a>
-            </h2>
-            <p className="lead">
-              Looking for an awesome and reliable webhosting? Try
-              <a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">
-                <span>DreamHost</span>
-              </a>
-              . Get <span>$50 off</span> when you sign up with the promocode <span>styleshout</span>.
-            </p>
-            <div className="action">
-              <a className="button large round" href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">
-                Sign Up Now
-              </a>
-            </div>
-          </div>
         </div>
       </div>
     </section>

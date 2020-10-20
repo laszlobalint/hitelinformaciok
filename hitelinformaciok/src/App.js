@@ -8,14 +8,19 @@ import Scroller from './components/Scroller/Scroller';
 import Preloader from './components/Preloader/Preloader';
 import Footer from './components/Footer/Footer';
 import Main from './components/Main/Main';
-import Subscription from './containers/Subscription/Subscription';
 
 const App = (props) => {
   const Calculator = React.lazy(() => {
     return import('./containers/Calculator/Calculator');
   });
+  const Faq = React.lazy(() => {
+    return import('./components/Faq/Faq');
+  });
   const Impressum = React.lazy(() => {
     return import('./components/Impressum/Impressum');
+  });
+  const Contact = React.lazy(() => {
+    return import('./containers/Contact/Contact');
   });
 
   const fallback = <article style={{ textAlign: 'center' }}>Hitelinformációk.hu betöltése...</article>;
@@ -23,7 +28,9 @@ const App = (props) => {
   const routes = (
     <Switch>
       <Route path="/calculator" render={(props) => <Calculator {...props} />} />
+      <Route path="/faq" render={(props) => <Faq {...props} />} />
       <Route path="/impressum" render={(props) => <Impressum {...props} />} />
+      <Route path="/contact" render={(props) => <Contact {...props} />} />
       <Route path="/" component={Main} />
       <Redirect to="/" />
     </Switch>
@@ -33,7 +40,6 @@ const App = (props) => {
     <Aux>
       <Layout>
         <Header />
-        <Subscription />
         <Suspense fallback={fallback}>{routes}</Suspense>
         <Scroller />
         <Preloader />
