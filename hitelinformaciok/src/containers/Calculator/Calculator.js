@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
+import IframeResizer from 'iframe-resizer-react';
 
-import classes from './Calculator.module.css';
 import { getCalculatorURL } from './Calculator.class';
 
 const Calculator = (props) => {
@@ -9,19 +9,19 @@ const Calculator = (props) => {
   );
 
   return (
-    <div className="container">
-      <iframe
-        className={[classes.Calculator, 'iframe-to-resize'].join(' ')}
-        id="calculator"
-        name="calculator"
-        title="Hitelkalkulátorok"
-        src={calculatorUrl}
-        frameBorder="0"
-        referrerPolicy="unsafe-url"
-        scrolling="no"
-        allowFullScreen
-      ></iframe>
-    </div>
+    <IframeResizer
+      key="iframe"
+      id="iframe"
+      name="iframe"
+      autoResize
+      inPageLinks
+      src={calculatorUrl}
+      bodyBackground="#eaeaed"
+      bodyMargin="0"
+      bodyPadding="0"
+      style={{ width: '1px', minWidth: '100%' }}
+      checkOrigin={['http://localhost:3000', 'https://www.hitel.hu', 'http://www.hitel.hu']}
+    />
   );
 };
 
