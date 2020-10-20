@@ -52,6 +52,14 @@ const Contact = (props) => {
                 Nincs meg minden válasza? Bizonytalan a lehetőségek terén? Tanácstalan a folytatás kapcsán? Adjon lehetőséget cégünknek egy
                 másfél órás díjmentes konzultáció keretein belül.
               </p>
+              <b>
+                1035 Budapest | Vihar utca 18. | info@hitelinformaciok.hu | +36 (1) 887 4846 |&nbsp;&nbsp;
+                <a href="https://www.facebook.com/hitelinformaciok" target="_blank" rel="noopener noreferrer">
+                  <span className="icon">
+                    <i className="ion-social-facebook"></i>
+                  </span>
+                </a>
+              </b>
             </div>
             <form>
               {formElements.map((element) => (
