@@ -1,11 +1,6 @@
 import CryptoJS from 'crypto-js';
 
-const API_KEY = 'FDI6KhA0D2YnrMhoDzAcTrUyd3ELKBhM';
-const API_SECRET = 'isJk3PHdafDM7VUvoKS_6bneOD3V1Wa0';
-const IV_MESSAGE = 'a';
-const MODE = 'dev';
-const UNIQUE = true;
-const MAX_LOAN_AMOUNT = 10000000;
+import { API_KEY, API_SECRET, IV_MESSAGE, MODE, UNIQUE, MAX_LOAN_AMOUNT } from '../../shared/configuration';
 
 export class Purpose {
   HASZNALT_VASARLAS = 1;

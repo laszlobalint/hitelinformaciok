@@ -1,0 +1,17 @@
+Input {
+  width: 100%;
+}
+
+.InputElement {
+  height: 4rem !important;
+}
+
+.Label {
+  margin: 0;
+  padding: 0;
+}
+
+.Invalid {
+  border: 1px solid#cc0033 !important;
+  background-color: #e4caca !important;
+}
