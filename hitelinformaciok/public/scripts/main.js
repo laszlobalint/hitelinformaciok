@@ -1,10 +1,6 @@
 (function ($) {
   ('use strict');
 
-  const pxShow = 300;
-  const fadeInTime = 400;
-  const fadeOutTime = 400;
-
   $(window).load(function () {
     $('#loader').fadeOut('slow', function () {
       $('#preloader').delay(300).fadeOut('slow');
@@ -12,7 +8,7 @@
   });
 
   $(window).on('scroll', function () {
-    let y = $(window).scrollTop(),
+    const y = $(window).scrollTop(),
       topBar = $('header');
     if (y > 1) {
       topBar.addClass('sticky');
@@ -38,10 +34,10 @@
 
   jQuery(window).scroll(function () {
     if (!$('#header-search').hasClass('is-visible')) {
-      if (jQuery(window).scrollTop() >= pxShow) {
-        jQuery('#go-top').fadeIn(fadeInTime);
+      if (jQuery(window).scrollTop() >= 300) {
+        jQuery('#go-top').fadeIn(400);
       } else {
-        jQuery('#go-top').fadeOut(fadeOutTime);
+        jQuery('#go-top').fadeOut(400);
       }
     }
   });
@@ -60,27 +56,9 @@
   });
 
   $(document).on('click', '#main-nav-wrap li a', function () {
-    if (nav.hasClass('mobile')) {
+    if ($('#main-navigation').hasClass('mobile')) {
       $('#menu-toggle').toggleClass('is-clicked');
       $('#main-navigation').fadeOut();
     }
   });
-
-  // PLACEHOLDER PLUGIN SETTINGS AND MAILCHIMP TRANSLATION
-  $('input, textarea, select').placeholder();
-  let mailChimpURL = 'http://facebook.us8.list-manage.com/subscribe/post?u=cdb7b577e41181934ed6a6a44&amp;id=e65110b38d';
-
-  $('#mc-form').ajaxChimp({
-    language: 'es',
-    url: mailChimpURL,
-  });
-  $.ajaxChimp.translations.es = {
-    submit: 'Submitting...',
-    0: '<i class="fa fa-check"></i> We have sent you a confirmation email',
-    1: '<i class="fa fa-warning"></i> You must enter a valid e-mail address.',
-    2: '<i class="fa fa-warning"></i> E-mail address is not valid.',
-    3: '<i class="fa fa-warning"></i> E-mail address is not valid.',
-    4: '<i class="fa fa-warning"></i> E-mail address is not valid.',
-    5: '<i class="fa fa-warning"></i> E-mail address is not valid.',
-  };
 })(jQuery);
