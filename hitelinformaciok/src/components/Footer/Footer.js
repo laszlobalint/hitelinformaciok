@@ -1,6 +1,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
+import office from '../../images/office_building.jpg';
+
 const Footer = (props) => (
   <footer>
     <div className="footer-main">
@@ -8,7 +10,7 @@ const Footer = (props) => (
         <div className="col-four tab-full mob-full footer-info">
           <div className="footer-logo"></div>
           <NavLink to="/calculator" title="Hitelkalkulációk" style={{ fontWeight: 'bold' }}>
-            Hitelkalkulációk
+            Hitelkalkuláció
           </NavLink>
           <p>
             1035 Budapest
@@ -84,6 +86,26 @@ const Footer = (props) => (
               </a>
             </li>
           </ul>
+        </div>
+        <div className="col-four tab-1-3 mob-full footer-subscribe">
+          <h4>Irodaházunk</h4>
+          <p>Keressél fel minket akár személyesen is.</p>
+          <div className="col-six tab-full">
+            <p>
+              <img
+                src={office}
+                alt="Irodaházunk"
+                style={{
+                  maxWidth: '500px',
+                  width: '200px',
+                  borderRadius: '2rem',
+                  boxShadow: '0px 8px 16px 0px rgba(0, 0, 0, 0.2)',
+                  margin: '0',
+                  padding: '0',
+                }}
+              />
+            </p>
+          </div>
         </div>
       </div>
     </div>

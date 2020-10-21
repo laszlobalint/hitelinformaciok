@@ -763,15 +763,6 @@ header .logo a {
   color: #ff7b29;
 }
 @media only screen and (max-width: 768px) {
-  header {
-    top: 0;
-    padding: 6px 0;
-  }
-  header .logo a {
-    width: 38px;
-    height: 38px;
-    background-size: 38px 38px;
-  }
 }
 #main-nav-wrap,
 .main-navigation {
@@ -829,9 +820,9 @@ a.menu-toggle {
   color: #1976d2;
 }
 .main-navigation li.with-sep a {
+  font-size: larger;
   position: relative;
   padding-left: 22px;
-  margin-left: 8px;
 }
 .main-navigation li.with-sep a::before {
   position: absolute;
@@ -871,6 +862,16 @@ a.menu-toggle {
   color: #ff7b29;
 }
 @media only screen and (max-width: 768px) {
+  header {
+    top: 0;
+    padding: 6px 0;
+  }
+  header .logo a {
+    width: 38px;
+    height: 38px;
+    background-size: 38px 38px;
+  }
+
   #main-nav-wrap {
     display: block;
     width: 100%;

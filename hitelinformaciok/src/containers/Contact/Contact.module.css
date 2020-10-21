@@ -4,12 +4,19 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 2rem;
+  padding: 3rem 0 2rem 0;
 }
 
 .Contact .Intro {
-  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
   margin: 0 auto;
+}
+
+.Contact .Map {
+  margin-left: 3rem;
 }
 
 .Contact > form {
@@ -68,6 +75,10 @@
   .Contact > form > button {
     padding: 0;
   }
+
+  .Contact .Map {
+    margin-left: 2rem;
+  }
 }
 @media only screen and (max-width: 768px) {
   .Contact > form,
@@ -79,6 +90,11 @@
   .Contact > form > button {
     padding: 0;
   }
+
+  .Contact .Intro {
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+  }
 }
 @media only screen and (max-width: 400px) {
   .Contact > form,
@@ -89,5 +105,10 @@
 
   .Contact > form > button {
     padding: 0;
+  }
+
+  .Contact .Map {
+    padding: 0;
+    margin: 0;
   }
 }

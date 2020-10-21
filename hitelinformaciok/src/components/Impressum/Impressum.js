@@ -8,8 +8,8 @@ const Impressum = (props) => (
       <div className="col-twelve tab-full">
         <h1>Impresszum és jogok</h1>
         <p className="lead">
-          A Hitel Expert Kft. tájékoztatja Önt, hogy weboldalának böngészése egyúttal az alábbi feltételek elfogadását is jelenti. Kérjük,
-          az alábbiakat figyelmesen olvassa el.
+          A Hitel Expert Kft. tájékoztatj Téged, hogy weboldalának böngészése egyúttal az alábbi feltételek elfogadását is jelenti. Kérjük,
+          az alábbiakat figyelmesen olvasd el.
         </p>
       </div>
     </div>

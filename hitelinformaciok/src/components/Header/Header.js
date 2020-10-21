@@ -70,10 +70,10 @@ const Header = (props) => (
       <div className="intro-content">
         <div className="row">
           <div className="col-twelve">
-            <h5>Üdvözli a Hitelinformációk.hu.</h5>
-            <h1>Időt és pénzt spórolhat meg hitelkalkulátorunkkal.</h1>
+            <h5>Üdvözöl a Hitelinformációk.hu.</h5>
+            <h1>Időt és pénzt spórolhatsz meg hitelkalkulátorunkkal.</h1>
             <NavLink className="button stroke" to="/calculator" title="Hitelkalkulátor">
-              Számoljon beruházásához
+              Számolj beruházásodhoz
             </NavLink>
           </div>
         </div>

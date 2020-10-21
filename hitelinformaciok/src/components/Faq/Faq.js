@@ -62,8 +62,8 @@ const Faq = (props) => (
     <div className="row section-ads">
       <div className="col-twelve">
         <div className="ad-content">
-          <h2 className="h01">Forduljon hozzánk bizalommal.</h2>
-          <p className="lead">Kiszámítható és biztonságos befektetésben gondolkodik? Segítünk a megvalósításban.</p>
+          <h2 className="h01">Fordulj hozzánk bizalommal.</h2>
+          <p className="lead">Kiszámítható és biztonságos befektetésben gondolkodsz? Segítünk a megvalósításban.</p>
           <div className="action">
             <NavLink to="/contact" className="button large round">
               Kapcsolatfelvétel

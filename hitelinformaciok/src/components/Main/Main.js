@@ -11,8 +11,8 @@ const Main = (props) => (
     <section id="cta">
       <div className="row cta-content">
         <div className="col-twelve">
-          <h1 className="h01">Ne csak tervezze, valósítsa is meg. </h1>
-          <p className="lead">Segítünk benne. Miként érdeklődik:</p>
+          <h1 className="h01">Ne csak tervezd, valósítsd is meg. </h1>
+          <p className="lead">Segítünk benne. Miként érdeklődsz:</p>
           <ul className="clients">
             <li className="play-store">
               <a href="http://hitelinformaciok.hu/" className="button round large" title="Lakossági ügyfél">
@@ -89,8 +89,8 @@ const Main = (props) => (
           <h5>Lépések</h5>
           <h1>Hogyan működik?</h1>
           <p className="lead">
-            A piacvezető pénintézetek ajánlatait egy helyen megtalálhatja. Az online hitelkalkulátorunk igénybevételével időt, pénzt és
-            fáradtságot takaríthat meg magának.
+            A piacvezető pénintézetek ajánlatait egy helyen megtalálod. Az online hitelkalkulátorunk igénybevételével időt, pénzt és
+            fáradtságot takaríthatsz meg magadnak.
           </p>
         </div>
       </div>
@@ -98,11 +98,11 @@ const Main = (props) => (
         <div className="left-side">
           <div className="item" data-item="1">
             <h5>IGÉNYFELMÉRÉS</h5>
-            <p>A hitelkalkulátoraink segítségével válassza ki az Önnek legmegfelelőbb bankot és ajánlatot.</p>
+            <p>A hitelkalkulátoraink segítségével válaszd ki a neked legmegfelelőbb bankot és ajánlatot.</p>
           </div>
           <div className="item" data-item="2">
             <h5>AJÁNLATKÉRÉS</h5>
-            <p>Ajánlatkéréshez adja meg a szükséges adatokat és információkat, melyek után 12 órán belül felkeressük.</p>
+            <p>Ajánlatkéréshez add meg a szükséges adatokat és információkat, melyek után 12 órán belül felkeresünk.</p>
           </div>
           <div className="item" data-item="3">
             <h5>TÁJÉKOZTATÁS</h5>
@@ -120,7 +120,7 @@ const Main = (props) => (
           </div>
           <div className="item" data-item="6">
             <h5>FOLYÓSÍTÁS</h5>
-            <p>Segítség és támogatás a Folyósítási feltételek teljesítésében, illetve rendszeres konzultációk.</p>
+            <p>Segítség és támogatás a folyósítási feltételek teljesítésében, illetve rendszeres konzultációk.</p>
           </div>
         </div>
         <div className="image-part"></div>
@@ -130,7 +130,7 @@ const Main = (props) => (
       <div className="row section-intro">
         <div className="col-twelve with-bottom-line">
           <h5>Ajánlataink</h5>
-          <h1>Megoldást kínálunk terveihez.</h1>
+          <h1>Megoldást kínálunk terveidhez.</h1>
           <p className="lead">
             Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem
             ipsum Consectetur ut in in eu do.
@@ -262,8 +262,8 @@ const Main = (props) => (
     <section id="pricing">
       <div className="row section-intro">
         <div className="col-twelve with-bottom-line">
-          <h5>Our Pricing</h5>
-          <h1>Pick the best plan for you.</h1>
+          <h5>Lorem Ipsum</h5>
+          <h1>Ipsum lorem ipsum lorem</h1>
           <p className="lead">
             Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem
             ipsum Consectetur ut in in eu do.
@@ -277,10 +277,10 @@ const Main = (props) => (
               <div className="top-part" data-info="Magánszemélyeknek">
                 <h3 className="plan-title">Lakossági (személyi célú) hitelek</h3>
                 <p className="plan-price">
-                  <sup>HUF</sup>4.99
+                  <sup>HUF</sup>49.999
                 </p>
                 <p className="price-month">Havonta</p>
-                <p className="price-meta">Billed Annually.</p>
+                <p className="price-meta">Éves térítés.</p>
               </div>
               <div className="bottom-part">
                 <ul className="features">
@@ -298,7 +298,7 @@ const Main = (props) => (
                   </li>
                 </ul>
                 <a className="button large" href="http://hitelinformaciok.hu/">
-                  Get Started
+                  Érdeklődöm
                 </a>
               </div>
             </div>
@@ -308,10 +308,10 @@ const Main = (props) => (
               <div className="top-part" data-info="Vállatoknak">
                 <h3 className="plan-title">Vállalati (céges) hitelek</h3>
                 <p className="plan-price">
-                  <sup>HUF</sup>9.99
+                  <sup>HUF</sup>49.999
                 </p>
                 <p className="price-month">Havonta</p>
-                <p className="price-meta">Billed Annually.</p>
+                <p className="price-meta">Éves térítés.</p>
               </div>
               <div className="bottom-part">
                 <ul className="features">
@@ -329,7 +329,7 @@ const Main = (props) => (
                   </li>
                 </ul>
                 <a className="button large" href="http://hitelinformaciok.hu/">
-                  Get Started
+                  Érdeklődöm
                 </a>
               </div>
             </div>
@@ -339,10 +339,10 @@ const Main = (props) => (
               <div className="top-part" data-info="Mindenkinek">
                 <h3 className="plan-title">Pályázatírás és tanácsadás</h3>
                 <p className="plan-price">
-                  <sup>HUF</sup>19.99
+                  <sup>HUF</sup>49.999
                 </p>
                 <p className="price-month">Havonta</p>
-                <p className="price-meta">Billed Annually.</p>
+                <p className="price-meta">Éves térítés.</p>
               </div>
               <div className="bottom-part">
                 <ul className="features">
@@ -360,7 +360,7 @@ const Main = (props) => (
                   </li>
                 </ul>
                 <a className="button large" href="http://hitelinformaciok.hu/">
-                  Get Started
+                  Érdeklődöm
                 </a>
               </div>
             </div>
@@ -370,10 +370,10 @@ const Main = (props) => (
               <div className="top-part" data-info="Mindenkinek">
                 <h3 className="plan-title">Biztosítási tanácsadás</h3>
                 <p className="plan-price">
-                  <sup>HUF</sup>29.99
+                  <sup>HUF</sup>49.999
                 </p>
-                <p className="price-month">Per month</p>
-                <p className="price-meta">Billed Annually.</p>
+                <p className="price-month">Havonta</p>
+                <p className="price-meta">Éves térítés.</p>
               </div>
               <div className="bottom-part">
                 <ul className="features">
@@ -391,7 +391,7 @@ const Main = (props) => (
                   </li>
                 </ul>
                 <a className="button large" href="http://hitelinformaciok.hu/">
-                  Get Started
+                  Érdeklődöm
                 </a>
               </div>
             </div>

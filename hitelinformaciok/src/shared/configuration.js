@@ -12,4 +12,4 @@ export const WHITELIST_DOMAINS = [
   'http://hitelinformaciok.hu/',
   'https://hitelinformaciok.hu/',
 ];
-export const GOOGLE_API = 'AIzaSyBn0jgzpWPw-KsSNyqcFRpMvsCo-k12mTo';
+export const MAPBOX_TOKEN = 'pk.eyJ1IjoibGFzemxvLWJhbGludCIsImEiOiJja2dqbXE1YmUwenBiMzB0ZWd4Z2RuZTl5In0.xNSPlDjaN61pLRmJ3JrYow';
