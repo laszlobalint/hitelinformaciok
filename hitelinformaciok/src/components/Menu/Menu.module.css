@@ -14,12 +14,13 @@
 .Items li:hover,
 .Selected {
   color: #ffffff;
-  background-color: #05bca9;
+  background-color: #1976d2;
 }
 
 .Menu,
 .Content,
 .Item {
+  color: #ffffff;
   padding-right: 1rem;
   width: max-content;
 }

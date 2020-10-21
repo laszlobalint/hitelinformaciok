@@ -12,3 +12,4 @@ export const WHITELIST_DOMAINS = [
   'http://hitelinformaciok.hu/',
   'https://hitelinformaciok.hu/',
 ];
+export const GOOGLE_API = 'AIzaSyBn0jgzpWPw-KsSNyqcFRpMvsCo-k12mTo';

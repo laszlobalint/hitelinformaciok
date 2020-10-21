@@ -19,6 +19,9 @@ const App = (props) => {
   const Impressum = React.lazy(() => {
     return import('./components/Impressum/Impressum');
   });
+  const DataPrivacy = React.lazy(() => {
+    return import('./components/DataPrivacy/DataPrivacy');
+  });
   const Contact = React.lazy(() => {
     return import('./containers/Contact/Contact');
   });
@@ -30,6 +33,7 @@ const App = (props) => {
       <Route path="/calculator" render={(props) => <Calculator {...props} />} />
       <Route path="/faq" render={(props) => <Faq {...props} />} />
       <Route path="/impressum" render={(props) => <Impressum {...props} />} />
+      <Route path="/data-privacy" render={(props) => <DataPrivacy {...props} />} />
       <Route path="/contact" render={(props) => <Contact {...props} />} />
       <Route path="/" component={Main} />
       <Redirect to="/" />

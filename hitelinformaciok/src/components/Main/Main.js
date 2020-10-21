@@ -4,9 +4,85 @@ import Aux from '../../hoc/Auxiliary/Auxiliary';
 import avatarOne from '../../images/avatars/avatar_1.jpg';
 import avatarTwo from '../../images/avatars/avatar_2.jpg';
 import avatarThree from '../../images/avatars/avatar_3.jpg';
+import bankLogos from '../../images/partner_banks.jpg';
 
 const Main = (props) => (
   <Aux>
+    <section id="cta">
+      <div className="row cta-content">
+        <div className="col-twelve">
+          <h1 className="h01">Ne csak tervezze, valósítsa is meg. </h1>
+          <p className="lead">Segítünk benne. Miként érdeklődik:</p>
+          <ul className="clients">
+            <li className="play-store">
+              <a href="http://hitelinformaciok.hu/" className="button round large" title="Lakossági ügyfél">
+                <i className="icon ion-home"></i>Lakossági ügyfél
+              </a>
+            </li>
+            <li className="windows-store">
+              <a href="http://hitelinformaciok.hu/" className="button round large" title="Vállalati ügyfél">
+                <i className="icon ion-calculator"></i>Vállalati ügyfél
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="testimonials">
+      <div className="row">
+        <div className="col-twelve">
+          <h2 className="h01">Ahogyan ügyfeleink látják.</h2>
+        </div>
+      </div>
+      <div className="row flex-container">
+        <div id="testimonial-slider" className="flexslider">
+          <ul className="slides">
+            <li>
+              <div className="testimonial-author">
+                <img src={avatarOne} alt="Author" />
+                <div className="author-info">
+                  Dorong Dénes
+                  <span className="position">magánvállalkozó</span>
+                </div>
+              </div>
+              <p>
+                Segítettek eligazodni az információk sokaságában, elmondták az előnyöket és a hátrányokat is. A korábbi tapasztalataik
+                alapján akár egyedi feltételeket, megoldásokat is tudtak kínálni. És bármilyen kérdé felmerült, teljeskörű és objektív
+                választ kaptam.
+              </p>
+            </li>
+            <li>
+              <div className="testimonial-author">
+                <img src={avatarTwo} alt="Author" />
+                <div className="author-info">
+                  Teszt Tamás
+                  <span>üzletvezető</span>
+                </div>
+              </div>
+              <p>
+                Mert fontos nekem a minőség és a profizmus. A kollégáik elérhetőek voltak, és a teljes hitelpiaci palettáról választtuk ki a
+                legmegfelelőbb terméket. Itt nem csak magánszemélyként, hanem cégként is megtalálhatod a legjobb finanszírozási
+                megoldásokat.
+              </p>
+            </li>
+            <li>
+              <div className="testimonial-author">
+                <img src={avatarThree} alt="Author" />
+                <div className="author-info">
+                  Avatár Aranka
+                  <span>kétgyermekes családanya</span>
+                </div>
+              </div>
+              <p>
+                Aminek külön örültem, hogy nem kellett bajlódnom a nyomtatványok kitöltésével, a banki kapcsolattartással, a
+                kölcsönszerződés értelmezésével vagy a folyósítási feltételekkel. Így az ügyintézés folyamatában még jól is tudtam magadat
+                érezni.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
     <section id="process">
       <div className="row section-intro">
         <div className="col-twelve with-bottom-line">
@@ -323,81 +399,6 @@ const Main = (props) => (
         </div>
       </div>
     </section>
-    <section id="testimonials">
-      <div className="row">
-        <div className="col-twelve">
-          <h2 className="h01">Ahogyan ügyfeleink látják.</h2>
-        </div>
-      </div>
-      <div className="row flex-container">
-        <div id="testimonial-slider" className="flexslider">
-          <ul className="slides">
-            <li>
-              <div className="testimonial-author">
-                <img src={avatarOne} alt="Author" />
-                <div className="author-info">
-                  Dorong Dénes
-                  <span className="position">magánvállalkozó</span>
-                </div>
-              </div>
-              <p>
-                Segítettek eligazodni az információk sokaságában, elmondták az előnyöket és a hátrányokat is. A korábbi tapasztalataik
-                alapján akár egyedi feltételeket, megoldásokat is tudtak kínálni. És bármilyen kérdé felmerült, teljeskörű és objektív
-                választ kaptam.
-              </p>
-            </li>
-            <li>
-              <div className="testimonial-author">
-                <img src={avatarTwo} alt="Author" />
-                <div className="author-info">
-                  Teszt Tamás
-                  <span>üzletvezető</span>
-                </div>
-              </div>
-              <p>
-                Mert fontos nekem a minőség és a profizmus. A kollégáik elérhetőek voltak, és a teljes hitelpiaci palettáról választtuk ki a
-                legmegfelelőbb terméket. Itt nem csak magánszemélyként, hanem cégként is megtalálhatod a legjobb finanszírozási
-                megoldásokat.
-              </p>
-            </li>
-            <li>
-              <div className="testimonial-author">
-                <img src={avatarThree} alt="Author" />
-                <div className="author-info">
-                  Avatár Aranka
-                  <span>kétgyermekes családanya</span>
-                </div>
-              </div>
-              <p>
-                Aminek külön örültem, hogy nem kellett bajlódnom a nyomtatványok kitöltésével, a banki kapcsolattartással, a
-                kölcsönszerződés értelmezésével vagy a folyósítási feltételekkel. Így az ügyintézés folyamatában még jól is tudtam magadat
-                érezni.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section id="cta">
-      <div className="row cta-content">
-        <div className="col-twelve">
-          <h1 className="h01">Ne csak tervezze, valósítsa is meg. </h1>
-          <p className="lead">Segítünk benne. Miként érdeklődik:</p>
-          <ul className="clients">
-            <li className="play-store">
-              <a href="http://hitelinformaciok.hu/" className="button round large" title="Lakossági ügyfél">
-                <i className="icon ion-home"></i>Lakossági ügyfél
-              </a>
-            </li>
-            <li className="windows-store">
-              <a href="http://hitelinformaciok.hu/" className="button round large" title="Vállalati ügyfél">
-                <i className="icon ion-calculator"></i>Vállalati ügyfél
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
     <section id="styles">
       <div className="row" style={{ marginTop: '3rem' }}>
         <div className="col-six tab-full">
@@ -426,19 +427,9 @@ const Main = (props) => (
       </div>
       <div className="row half-bottom">
         <div className="col-six tab-full">
-          <h3>Tájékozódjon a befektetési lehetőségeiről</h3>
+          <h3>Partner bankintézeteink</h3>
           <div className="fluid-video-wrapper">
-            <iframe
-              title="loanVideo"
-              width="500"
-              height="280"
-              src="https://www.youtube.com/embed/HaZF_dO7MZU"
-              frameBorder={0}
-              webkitallowfullscreen="true"
-              mozallowfullscreen="true"
-              allowFullScreen
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            ></iframe>
+            <img src={bankLogos} alt="Bankpartnereink" />
           </div>
         </div>
       </div>

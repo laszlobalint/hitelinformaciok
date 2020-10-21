@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { NavLink } from 'react-router-dom';
 
 const Footer = (props) => (
@@ -8,7 +7,7 @@ const Footer = (props) => (
       <div className="row">
         <div className="col-four tab-full mob-full footer-info">
           <div className="footer-logo"></div>
-          <NavLink to="/calculator" title="Hitelkalkulációk">
+          <NavLink to="/calculator" title="Hitelkalkulációk" style={{ fontWeight: 'bold' }}>
             Hitelkalkulációk
           </NavLink>
           <p>
@@ -16,7 +15,9 @@ const Footer = (props) => (
             <br />
             Vihar utca 18.
             <br />
-            info@hitelinformaciok.hu &nbsp; +36 (1) 887 4846
+            info@hitelinformaciok.hu
+            <br />
+            +36 (1) 887 4846
           </p>
         </div>
         <div className="col-two tab-1-3 mob-1-2 site-links">
@@ -28,13 +29,19 @@ const Footer = (props) => (
               </NavLink>
             </li>
             <li>
-              <a href="http://hitelinformaciok.hu/">Ajánlataink</a>
+              <a href="http://hitelinformaciok.hu/" title="Ajánlatkérés">
+                Ajánlatkérés
+              </a>
             </li>
             <li>
-              <a href="http://hitelinformaciok.hu/">Ajánlatkérés</a>
+              <NavLink to="/faq" title="Gyakran ismételt kérdések">
+                GY.I.K.
+              </NavLink>
             </li>
             <li>
-              <a href="http://hitelinformaciok.hu/">GY.I.K.</a>
+              <NavLink to="/data-privacy" title="Adatvédelem és adatkezelési tájékoztató">
+                Adatvédelem
+              </NavLink>
             </li>
             <li>
               <NavLink to="/impressum" title="Impresszum">
@@ -42,7 +49,9 @@ const Footer = (props) => (
               </NavLink>
             </li>
             <li>
-              <a href="http://hitelinformaciok.hu/">Kapcsolat</a>
+              <NavLink to="/contact" title="Kapcsolat">
+                Kapcsolat
+              </NavLink>
             </li>
           </ul>
         </div>
@@ -75,26 +84,6 @@ const Footer = (props) => (
               </a>
             </li>
           </ul>
-        </div>
-        <div className="col-four tab-1-3 mob-full footer-subscribe">
-          <h4>Feliratkozás</h4>
-          <p>Értesüljön a legújabb ajánlatainkról.</p>
-          <div className="subscribe-form">
-            <form id="mc-form" className="group" noValidate>
-              <input
-                type="email"
-                value=""
-                name="email"
-                className="email"
-                id="mc-email"
-                placeholder="Írja be az e-mail címét..."
-                onChange={() => {}}
-                required
-              />
-              <input type="submit" name="subscribe" />
-              <label htmlFor="mc-email" className="subscribe-message"></label>
-            </form>
-          </div>
         </div>
       </div>
     </div>

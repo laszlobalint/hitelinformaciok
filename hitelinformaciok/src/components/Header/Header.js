@@ -34,8 +34,13 @@ const Header = (props) => (
               </a>
             </li>
             <li>
-              <NavLink to="/faq" title="Gyakran ismételt kérdések" exact>
+              <NavLink to="/faq" title="Gyakran ismételt kérdések">
                 GY.I.K.
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/data-privacy" title="Adatvédelem és adatkezelési tájékoztató">
+                Adatvédelem
               </NavLink>
             </li>
             <li>

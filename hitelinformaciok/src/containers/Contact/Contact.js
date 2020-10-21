@@ -7,6 +7,7 @@ import { contactFormControls } from './Contact.input';
 import { checkValidity } from '../../shared/validation';
 import { updateObject } from '../../shared/utility';
 import Input from '../../components/Input/Input';
+import LeafletMap from '../../components/LeafletMap/LeafletMap';
 
 const Contact = (props) => {
   const [controls, setControls] = useState(contactFormControls);
@@ -61,24 +62,27 @@ const Contact = (props) => {
                 </a>
               </b>
             </div>
-            <form>
-              {formElements.map((element) => (
-                <Input
-                  key={element.id}
-                  elementType={element.config.elementType}
-                  elementConfig={element.config.elementConfig}
-                  value={element.config.value}
-                  label={element.config.label}
-                  invalid={!element.config.valid}
-                  validate={element.config.validation}
-                  touched={element.config.touched}
-                  changed={(event) => inputChangedHandler(event, element.id)}
-                />
-              ))}
-              <button type="button" disabled={!isValid} onClick={(event) => sendFormDataHandler(event, subscribe)}>
-                KÜLDÉS
-              </button>
-            </form>
+            <div>
+              <form>
+                {formElements.map((element) => (
+                  <Input
+                    key={element.id}
+                    elementType={element.config.elementType}
+                    elementConfig={element.config.elementConfig}
+                    value={element.config.value}
+                    label={element.config.label}
+                    invalid={!element.config.valid}
+                    validate={element.config.validation}
+                    touched={element.config.touched}
+                    changed={(event) => inputChangedHandler(event, element.id)}
+                  />
+                ))}
+                <button type="button" disabled={!isValid} onClick={(event) => sendFormDataHandler(event, subscribe)}>
+                  KÜLDÉS
+                </button>
+              </form>
+              <LeafletMap />
+            </div>
           </div>
         );
 
