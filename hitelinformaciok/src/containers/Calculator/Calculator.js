@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import IframeResizer from 'iframe-resizer-react';
 
 import { getCalculatorURL } from './Calculator.class';
+import { WHITELIST_DOMAINS } from '../../shared/configuration';
 
 const Calculator = (props) => {
   const [calculatorUrl] = useState(
@@ -20,7 +21,7 @@ const Calculator = (props) => {
       bodyMargin="0"
       bodyPadding="0"
       style={{ width: '1px', minWidth: '100%' }}
-      checkOrigin={['http://localhost:3000', 'https://www.hitel.hu', 'http://www.hitel.hu']}
+      checkOrigin={WHITELIST_DOMAINS}
     />
   );
 };
