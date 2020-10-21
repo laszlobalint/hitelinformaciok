@@ -47,7 +47,7 @@ const Main = (props) => (
               </div>
               <p>
                 Segítettek eligazodni az információk sokaságában, elmondták az előnyöket és a hátrányokat is. A korábbi tapasztalataik
-                alapján akár egyedi feltételeket, megoldásokat is tudtak kínálni. És bármilyen kérdé felmerült, teljeskörű és objektív
+                alapján akár egyedi feltételeket, megoldásokat is tudtak kínálni. És bármilyen kérdés felmerült, teljeskörű és objektív
                 választ kaptam.
               </p>
             </li>
