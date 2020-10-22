@@ -8,6 +8,7 @@ import Scroller from './components/Scroller/Scroller';
 import Preloader from './components/Preloader/Preloader';
 import Footer from './components/Footer/Footer';
 import Main from './components/Main/Main';
+import Chat from './containers/Chat/Chat';
 
 const App = (props) => {
   const Calculator = React.lazy(() => {
@@ -44,6 +45,7 @@ const App = (props) => {
     <Aux>
       <Layout>
         <Header />
+        <Chat />
         <Suspense fallback={fallback}>{routes}</Suspense>
         <Scroller />
         <Preloader />

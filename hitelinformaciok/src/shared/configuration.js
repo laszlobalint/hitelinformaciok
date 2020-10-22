@@ -13,3 +13,5 @@ export const WHITELIST_DOMAINS = [
   'https://hitelinformaciok.hu/',
 ];
 export const MAPBOX_TOKEN = 'pk.eyJ1IjoibGFzemxvLWJhbGludCIsImEiOiJja2dqbXE1YmUwenBiMzB0ZWd4Z2RuZTl5In0.xNSPlDjaN61pLRmJ3JrYow';
+export const FACEBOOK_PAGE_ID = '100428298538071';
+export const FACEBOOK_APP_ID = '352635499360423';
