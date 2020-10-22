@@ -11,7 +11,8 @@ export const WHITELIST_DOMAINS = [
   'http://www.hitel.hu',
   'http://hitelinformaciok.hu/',
   'https://hitelinformaciok.hu/',
+  'http://hitelinformaciok.hu:3000/',
 ];
 export const MAPBOX_TOKEN = 'pk.eyJ1IjoibGFzemxvLWJhbGludCIsImEiOiJja2dqbXE1YmUwenBiMzB0ZWd4Z2RuZTl5In0.xNSPlDjaN61pLRmJ3JrYow';
-export const FACEBOOK_PAGE_ID = '100428298538071';
 export const FACEBOOK_APP_ID = '655829265320938';
+export const FACEBOOK_PAGE_ID = '403100240242200';

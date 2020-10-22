@@ -9,8 +9,8 @@ const Chat = (props) => (
     <MessengerCustomerChat
       pageId={FACEBOOK_PAGE_ID}
       appId={FACEBOOK_APP_ID}
-      loggedInGreeting={'Miben segíthetünk?'}
-      loggedOutGreeting={'Miben segíthetünk?'}
+      loggedInGreeting={'Miben segíthetünk Neked?'}
+      loggedOutGreeting={'Miben segíthetünk Neked?'}
       language={'hu_HU'}
       greetingDialogDisplay={'show'}
       greetingDialogDelay={10}

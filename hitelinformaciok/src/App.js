@@ -45,10 +45,10 @@ const App = (props) => {
     <Aux>
       <Layout>
         <Header />
-        <Chat />
         <Suspense fallback={fallback}>{routes}</Suspense>
         <Scroller />
         <Preloader />
+        <Chat />
         <Footer />
       </Layout>
     </Aux>
