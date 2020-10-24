@@ -39,7 +39,7 @@ const Main = (props) => (
           <ul className="slides">
             <li>
               <div className="testimonial-author">
-                <img src={avatarOne} alt="Author" />
+                <img src={avatarOne} alt="Ügyfél" />
                 <div className="author-info">
                   Dorong Dénes
                   <span className="position">magánvállalkozó</span>
@@ -53,7 +53,7 @@ const Main = (props) => (
             </li>
             <li>
               <div className="testimonial-author">
-                <img src={avatarTwo} alt="Author" />
+                <img src={avatarTwo} alt="Ügyfél" />
                 <div className="author-info">
                   Teszt Tamás
                   <span>üzletvezető</span>
@@ -67,7 +67,7 @@ const Main = (props) => (
             </li>
             <li>
               <div className="testimonial-author">
-                <img src={avatarThree} alt="Author" />
+                <img src={avatarThree} alt="Ügyfél" />
                 <div className="author-info">
                   Avatár Aranka
                   <span>kétgyermekes családanya</span>

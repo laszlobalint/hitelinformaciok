@@ -20,7 +20,7 @@ const Posts = (props) => {
   if (!error) {
     postElements = posts.map((post) => (
       <NavLink to={`${match.url}/${post.id}`} key={post.id}>
-        <Post author={post.author} title={post.title} clicked={() => postSelectedHandler(post.id)} />
+        <Post category={post.category} title={post.title} clicked={() => postSelectedHandler(post.id)} />
       </NavLink>
     ));
   }
