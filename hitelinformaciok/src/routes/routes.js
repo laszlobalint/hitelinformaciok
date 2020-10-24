@@ -2,6 +2,8 @@ import React from 'react';
 import { Route, Redirect, Switch } from 'react-router-dom';
 
 import Main from '../components/Main/Main';
+import NewPost from '../containers/Blog/NewPost/NewPost';
+import Posts from '../containers/Blog/Posts/Posts';
 
 const Calculator = React.lazy(() => {
   return import('../containers/Calculator/Calculator');
@@ -24,6 +26,9 @@ const Auth = React.lazy(() => {
 const Logout = React.lazy(() => {
   return import('../containers/Auth/Logout/Logout');
 });
+const Blog = React.lazy(() => {
+  return import('../containers/Blog/Blog');
+});
 
 const getRoutes = (isAuthenticated) => {
   let routes = null;
@@ -37,6 +42,9 @@ const getRoutes = (isAuthenticated) => {
         <Route path="/data-privacy" render={(props) => <DataPrivacy {...props} />} />
         <Route path="/contact" render={(props) => <Contact {...props} />} />
         <Route path="/logout" render={(props) => <Logout {...props} />} />
+        <Route path="/blog" render={(props) => <Blog {...props} />} />
+        <Route path="/posts" component={Posts} />
+        <Route path="/new-post" component={NewPost} />
         <Route path="/" component={Main} />
         <Redirect to="/" />
       </Switch>

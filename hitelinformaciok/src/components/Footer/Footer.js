@@ -81,9 +81,15 @@ const Footer = (props) => (
               </a>
             </li>
             <li>
-              <a href="https://hitelinformaciok.hu/" target="_blank" rel="noopener noreferrer" title="Weboldal">
-                Weboldal
-              </a>
+              {props.isAuthenticated ? (
+                <NavLink to="/blog" title="Blog és cikkek">
+                  Blog
+                </NavLink>
+              ) : (
+                <a href="https://hitelinformaciok.hu/" target="_blank" rel="noopener noreferrer" title="Weboldal">
+                  Weboldal
+                </a>
+              )}
             </li>
             <li>
               {props.isAuthenticated ? (

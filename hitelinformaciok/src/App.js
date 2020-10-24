@@ -2,6 +2,7 @@ import React, { useState, useEffect, Suspense } from 'react';
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 
+import * as actions from './store/actions';
 import getRoutes from './routes/routes';
 import Aux from './hoc/Auxiliary/Auxiliary';
 import Layout from './hoc/Layout/Layout';
@@ -12,13 +13,14 @@ import Footer from './components/Footer/Footer';
 import Chat from './containers/Chat/Chat';
 
 const App = (props) => {
-  const { isAuthenticated } = props;
+  const { isAuthenticated, onFetchPosts } = props;
 
   const [routes, setRoutes] = useState(null);
 
   useEffect(() => {
     setRoutes(getRoutes(isAuthenticated));
-  }, [isAuthenticated]);
+    onFetchPosts();
+  }, [isAuthenticated, onFetchPosts]);
 
   const fallback = <article style={{ textAlign: 'center' }}>Hitelinformációk.hu betöltése...</article>;
 
@@ -42,4 +44,10 @@ const mapStateToProps = (state) => {
   };
 };
 
-export default connect(mapStateToProps)(withRouter(App));
+const mapDispatchToProps = (dispatch) => {
+  return {
+    onFetchPosts: () => dispatch(actions.fetchPosts()),
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(withRouter(App));

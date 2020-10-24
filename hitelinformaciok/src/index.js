@@ -13,13 +13,15 @@ import './styles/vendor.css';
 
 import App from './App';
 import auth from './store/reducers/auth';
-import { watchAuthentication } from './store/sagas';
+import posts from './store/reducers/posts';
+import { watchAuthentication, watchPosts } from './store/sagas';
 
 const composeEnhancers = (process.env.NODE_ENV === 'development' ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ : null) || compose;
-const rootReducer = combineReducers({ auth });
+const rootReducer = combineReducers({ auth, posts });
 const sagaMiddleware = createSagaMiddleware();
 const store = createStore(rootReducer, composeEnhancers(applyMiddleware(thunk, sagaMiddleware)));
 sagaMiddleware.run(watchAuthentication);
+sagaMiddleware.run(watchPosts);
 
 const APP = (
   <Provider store={store}>
