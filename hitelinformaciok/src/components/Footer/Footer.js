@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-import office from '../../images/office_building.jpg';
+import office from '../../assets/images/office_building.jpg';
 
 const Footer = (props) => (
   <footer>
@@ -61,29 +61,40 @@ const Footer = (props) => (
           <h4>Közösségek</h4>
           <ul>
             <li>
-              <a href="https://www.facebook.com/hitelinformaciok" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.facebook.com/hitelinformaciok" target="_blank" rel="noopener noreferrer" title="Facebook">
                 Facebook
               </a>
             </li>
             <li>
-              <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+              <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" title="Twitter">
                 Twitter
               </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" title="Instagram">
                 Instagram
               </a>
             </li>
             <li>
-              <a href="https://www.skype.com/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.skype.com/" target="_blank" rel="noopener noreferrer" title="Skype">
                 Skype
               </a>
             </li>
             <li>
-              <a href="https://hitelinformaciok.hu/" target="_blank" rel="noopener noreferrer">
+              <a href="https://hitelinformaciok.hu/" target="_blank" rel="noopener noreferrer" title="Weboldal">
                 Weboldal
               </a>
+            </li>
+            <li>
+              {props.isAuthenticated ? (
+                <NavLink to="/logout" title="Kijelentkezés">
+                  Kijelentkezés
+                </NavLink>
+              ) : (
+                <NavLink to="/auth" title="Bejelentkezés">
+                  Admin
+                </NavLink>
+              )}
             </li>
           </ul>
         </div>

@@ -1,45 +1,26 @@
-import React, { Suspense } from 'react';
-import { Route, Redirect, Switch, withRouter } from 'react-router-dom';
+import React, { useState, useEffect, Suspense } from 'react';
+import { withRouter } from 'react-router-dom';
+import { connect } from 'react-redux';
 
+import getRoutes from './routes/routes';
 import Aux from './hoc/Auxiliary/Auxiliary';
 import Layout from './hoc/Layout/Layout';
 import Header from './components/Header/Header';
 import Scroller from './components/Scroller/Scroller';
 import Preloader from './components/Preloader/Preloader';
 import Footer from './components/Footer/Footer';
-import Main from './components/Main/Main';
 import Chat from './containers/Chat/Chat';
 
 const App = (props) => {
-  const Calculator = React.lazy(() => {
-    return import('./containers/Calculator/Calculator');
-  });
-  const Faq = React.lazy(() => {
-    return import('./components/Faq/Faq');
-  });
-  const Impressum = React.lazy(() => {
-    return import('./components/Impressum/Impressum');
-  });
-  const DataPrivacy = React.lazy(() => {
-    return import('./components/DataPrivacy/DataPrivacy');
-  });
-  const Contact = React.lazy(() => {
-    return import('./containers/Contact/Contact');
-  });
+  const { isAuthenticated } = props;
+
+  const [routes, setRoutes] = useState(null);
+
+  useEffect(() => {
+    setRoutes(getRoutes(isAuthenticated));
+  }, [isAuthenticated]);
 
   const fallback = <article style={{ textAlign: 'center' }}>Hitelinformációk.hu betöltése...</article>;
-
-  const routes = (
-    <Switch>
-      <Route path="/calculator" render={(props) => <Calculator {...props} />} />
-      <Route path="/faq" render={(props) => <Faq {...props} />} />
-      <Route path="/impressum" render={(props) => <Impressum {...props} />} />
-      <Route path="/data-privacy" render={(props) => <DataPrivacy {...props} />} />
-      <Route path="/contact" render={(props) => <Contact {...props} />} />
-      <Route path="/" component={Main} />
-      <Redirect to="/" />
-    </Switch>
-  );
 
   return (
     <Aux>
@@ -49,10 +30,16 @@ const App = (props) => {
         <Scroller />
         <Preloader />
         <Chat />
-        <Footer />
+        <Footer isAuthenticated={isAuthenticated} />
       </Layout>
     </Aux>
   );
 };
 
-export default withRouter(App);
+const mapStateToProps = (state) => {
+  return {
+    isAuthenticated: state.auth.token && state.auth.userId,
+  };
+};
+
+export default connect(mapStateToProps)(withRouter(App));

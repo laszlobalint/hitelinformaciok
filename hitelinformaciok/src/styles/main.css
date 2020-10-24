@@ -719,7 +719,7 @@ header .logo a {
   color: transparent;
   width: 42px;
   height: 42px;
-  background: url('../images/logo.png') no-repeat center;
+  background: url(../assets/images/logo.png) no-repeat center;
   background-size: 42px 42px;
   -moz-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
@@ -996,9 +996,10 @@ a.menu-toggle {
   }
 }
 #intro {
-  background: #14181e url(../images/intro-bg.jpg) no-repeat center;
+  background: #14181e url(../assets/images/intro-bg.jpg) no-repeat center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -1202,11 +1203,12 @@ a.menu-toggle {
 .process-content .image-part {
   margin: 0 auto;
   height: 660px;
-  background-image: url('../images/steps_calculator.png');
+  background-image: url(../assets/images/steps_calculator.png);
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: contain;
   -moz-background-size: contain;
+  -o-background-size: contain;
   background-size: contain;
 }
 .process-content .item[data-item]::before {
@@ -1270,9 +1272,10 @@ a.menu-toggle {
   }
 }
 #features {
-  background: #090909 url(../images/features-bg.jpg) no-repeat center;
+  background: #090909 url(../assets/images/features-bg.jpg) no-repeat center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   padding-top: 12rem;
   padding-bottom: 12rem;
@@ -1862,7 +1865,7 @@ footer ul li {
 }
 .footer-main .footer-logo {
   height: 80px;
-  background: url('../images/hitelexpert.png') no-repeat center;
+  background: url(../assets/images/hitelexpert.png) no-repeat center;
   display: block;
 }
 .footer-main .footer-subscribe p {

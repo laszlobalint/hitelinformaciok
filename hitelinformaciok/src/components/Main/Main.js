@@ -1,10 +1,10 @@
 import React from 'react';
 
 import Aux from '../../hoc/Auxiliary/Auxiliary';
-import avatarOne from '../../images/avatars/avatar_1.jpg';
-import avatarTwo from '../../images/avatars/avatar_2.jpg';
-import avatarThree from '../../images/avatars/avatar_3.jpg';
-import bankLogos from '../../images/partner_banks.jpg';
+import avatarOne from '../../assets/images/avatars/avatar_1.jpg';
+import avatarTwo from '../../assets/images/avatars/avatar_2.jpg';
+import avatarThree from '../../assets/images/avatars/avatar_3.jpg';
+import bankLogos from '../../assets/images/partner_banks.jpg';
 
 const Main = (props) => (
   <Aux>

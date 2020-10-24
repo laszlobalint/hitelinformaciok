@@ -16,3 +16,6 @@ export const WHITELIST_DOMAINS = [
 export const MAPBOX_TOKEN = 'pk.eyJ1IjoibGFzemxvLWJhbGludCIsImEiOiJja2dqbXE1YmUwenBiMzB0ZWd4Z2RuZTl5In0.xNSPlDjaN61pLRmJ3JrYow';
 export const FACEBOOK_APP_ID = '655829265320938';
 export const FACEBOOK_PAGE_ID = '403100240242200';
+export const DATABASE_URL = 'https://hitelinformaciok-c7f10.firebaseio.com/';
+export const DATABASE_ENDPOINT_BASE = 'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=';
+export const DATABASE_API_KEY = 'AIzaSyCFv1GrSBay7njPo5eoPEoNduy47myAdUQ';
