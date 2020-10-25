@@ -5,9 +5,11 @@ import avatarOne from '../../assets/images/avatars/avatar_1.jpg';
 import avatarTwo from '../../assets/images/avatars/avatar_2.jpg';
 import avatarThree from '../../assets/images/avatars/avatar_3.jpg';
 import bankLogos from '../../assets/images/partner_banks.jpg';
+import Articles from '../Articles/Articles';
 
 const Main = (props) => (
   <Aux>
+    <Articles />
     <section id="cta">
       <div className="row cta-content">
         <div className="col-twelve">

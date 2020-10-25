@@ -1,0 +1,13 @@
+.carousel .slide {
+  background: none;
+  padding: 3rem 0 5rem 0;
+  text-align: center;
+}
+
+.carousel .slide article {
+  margin: 0 auto;
+}
+
+.carousel .control-arrow {
+  opacity: 1 !important;
+}
