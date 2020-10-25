@@ -10,10 +10,11 @@ import { checkValidity } from '../../../shared/validation';
 import Input from '../../../components/Input/Input';
 
 const NewPost = (props) => {
-  const { isAuthenticated, error, loading } = props;
+  const { counter, error, loading, isAuthenticated, onSavePost } = props;
 
   const [controls, setControls] = useState(newPostFormControls);
   const [isValid, setIsValid] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const inputChangedHandler = (event, controlName) => {
     const updatedControls = updateObject(controls, {
@@ -31,8 +32,16 @@ const NewPost = (props) => {
     setIsValid(formIsValid);
   };
 
-  const submitHandler = (event) => {
+  const submitFormHandler = (event) => {
     event.preventDefault();
+    const newPostData = {
+      id: counter + 1,
+      title: controls.title.value,
+      body: controls.body.value,
+      category: controls.category.value,
+    };
+    onSavePost(newPostData, newPostData.id);
+    setIsSubmitted(true);
   };
 
   const formElements = [];
@@ -57,10 +66,13 @@ const NewPost = (props) => {
     </button>,
   ];
 
-  if (loading) form = <h2 className={classes.Loading}>Űrlap betöltése folyamatban... Kérjük, hogy várj.</h2>;
+  if (loading) {
+    form = <h2 className={classes.Loading}>Kérjük, hogy várj...</h2>;
+  }
 
   let redirect = null;
   if (!isAuthenticated) redirect = <Redirect to="/" />;
+  if (isSubmitted) redirect = <Redirect to="/blog" />;
 
   let errorMessage = null;
   if (error) errorMessage = <p className={classes.Error}>{props.error}</p>;
@@ -70,7 +82,7 @@ const NewPost = (props) => {
       <h1>Új cikk létrehozása</h1>
       {redirect}
       {errorMessage}
-      <form className={classes.InputElement} onSubmit={submitHandler}>
+      <form className={classes.InputElement} onSubmit={submitFormHandler}>
         {form}
       </form>
     </div>
@@ -79,6 +91,7 @@ const NewPost = (props) => {
 
 const mapStateToProps = (state) => {
   return {
+    counter: state.posts.counter,
     loading: state.posts.loading,
     error: state.posts.error,
     isAuthenticated: state.auth.token && state.auth.userId,
@@ -86,7 +99,9 @@ const mapStateToProps = (state) => {
 };
 
 const mapDispatchToProps = (dispatch) => {
-  return {};
+  return {
+    onSavePost: (post, counter) => dispatch(actions.savePost(post, counter)),
+  };
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(NewPost);
