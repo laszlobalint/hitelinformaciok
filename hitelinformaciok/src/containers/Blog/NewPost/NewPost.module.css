@@ -40,3 +40,18 @@
   color: #ffffff;
   background-color: #fa923f;
 }
+
+.Loading {
+  color: #1976d2;
+}
+
+.Error {
+  color: #cc0033;
+}
+
+.InputElement input[type='text'],
+.InputElement input[type='select'],
+.InputElement select,
+.InputElement textarea {
+  height: 6rem !important;
+}

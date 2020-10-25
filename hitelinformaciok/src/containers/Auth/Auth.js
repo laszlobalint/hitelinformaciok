@@ -57,13 +57,13 @@ const Auth = (props) => {
     </button>,
   ];
 
-  if (loading) form = <h2 style={{ color: '#1976d2' }}>Bejelentkezés folyamatban... Kérjük, hogy várj.</h2>;
+  if (loading) form = <h2 className={classes.Loading}>Bejelentkezés folyamatban... Kérjük, hogy várj.</h2>;
 
   let redirect = null;
   if (isAuthenticated) redirect = <Redirect to="/" />;
 
   let errorMessage = null;
-  if (error) errorMessage = <p style={{ color: '#cc0033' }}>{props.error}</p>;
+  if (error) errorMessage = <p className={classes.Error}>{props.error}</p>;
 
   return (
     <div className={classes.Auth}>

@@ -16,6 +16,14 @@
   margin: 0 auto;
 }
 
+.Loading {
+  color: #1976d2;
+}
+
+.Error {
+  color: #cc0033;
+}
+
 @media only screen and (max-width: 1024px) {
   .Auth > form {
     width: 70%;

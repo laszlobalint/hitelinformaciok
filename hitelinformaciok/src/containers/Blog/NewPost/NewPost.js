@@ -1,31 +1,92 @@
 import React, { useState } from 'react';
+import { Redirect } from 'react-router-dom';
+import { connect } from 'react-redux';
 
 import classes from './NewPost.module.css';
+import * as actions from '../../../store/actions';
+import { newPostFormControls } from './NewPost.input';
+import { updateObject } from '../../../shared/utility';
+import { checkValidity } from '../../../shared/validation';
+import Input from '../../../components/Input/Input';
 
 const NewPost = (props) => {
-  const [title, setTitle] = useState(null);
-  const [body, setBody] = useState(null);
-  const [category, setCategory] = useState(null);
+  const { isAuthenticated, error, loading } = props;
 
-  const postDataHandler = () => {
-    props.history.replace('/posts');
+  const [controls, setControls] = useState(newPostFormControls);
+  const [isValid, setIsValid] = useState(false);
+
+  const inputChangedHandler = (event, controlName) => {
+    const updatedControls = updateObject(controls, {
+      [controlName]: updateObject(controls[controlName], {
+        value: event.target.value,
+        valid: checkValidity(event.target.value, controls[controlName].validation),
+        touched: true,
+      }),
+    });
+
+    let formIsValid = true;
+    for (let inputIdentifier in updatedControls) formIsValid = updatedControls[inputIdentifier].valid && formIsValid;
+
+    setControls(updatedControls);
+    setIsValid(formIsValid);
   };
+
+  const submitHandler = (event) => {
+    event.preventDefault();
+  };
+
+  const formElements = [];
+  for (let key in controls) formElements.push({ id: key, config: controls[key] });
+
+  let form = [
+    formElements.map((element) => (
+      <Input
+        key={element.id}
+        elementType={element.config.elementType}
+        elementConfig={element.config.elementConfig}
+        value={element.config.value}
+        label={element.config.label}
+        invalid={!element.config.valid}
+        shouldValidate={element.config.validation}
+        touched={element.config.touched}
+        changed={(event) => inputChangedHandler(event, element.id)}
+      />
+    )),
+    <button key="button" type="submit" disabled={!isValid}>
+      KÜLDÉS
+    </button>,
+  ];
+
+  if (loading) form = <h2 className={classes.Loading}>Űrlap betöltése folyamatban... Kérjük, hogy várj.</h2>;
+
+  let redirect = null;
+  if (!isAuthenticated) redirect = <Redirect to="/" />;
+
+  let errorMessage = null;
+  if (error) errorMessage = <p className={classes.Error}>{props.error}</p>;
 
   return (
     <div className={classes.NewPost}>
       <h1>Új cikk létrehozása</h1>
-      <label>Cím</label>
-      <input type="text" value={title} onChange={(event) => setTitle(event.target.value)} />
-      <label>Tartalom</label>
-      <textarea rows="4" value={body} onChange={(event) => setBody(event.target.value)} />
-      <label>Kategória</label>
-      <select value={category} onChange={(event) => setCategory(event.target.value)}>
-        <option value="residental">Lakossági</option>
-        <option value="business">Vállalati</option>
-      </select>
-      <button onClick={postDataHandler}>Cikk elküldése</button>
+      {redirect}
+      {errorMessage}
+      <form className={classes.InputElement} onSubmit={submitHandler}>
+        {form}
+      </form>
     </div>
   );
 };
 
-export default NewPost;
+const mapStateToProps = (state) => {
+  return {
+    loading: state.posts.loading,
+    error: state.posts.error,
+    isAuthenticated: state.auth.token && state.auth.userId,
+  };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {};
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(NewPost);
