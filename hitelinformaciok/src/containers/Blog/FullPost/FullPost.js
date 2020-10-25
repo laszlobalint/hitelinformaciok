@@ -14,9 +14,9 @@ const FullPost = (props) => {
 
   const postDeletedHandler = () => {};
 
-  let post = <p style={{ textAlign: 'center' }}>Válassz egy cikkbejegyzést!</p>;
+  let post = <p className={classes.Align}>Válassz egy cikkbejegyzést!</p>;
 
-  if (match.params.id) post = <p style={{ textAlign: 'center' }}>Betöltés...</p>;
+  if (match.params.id) post = <p className={classes.Align}>Betöltés...</p>;
 
   if (loadedPost) {
     post = (

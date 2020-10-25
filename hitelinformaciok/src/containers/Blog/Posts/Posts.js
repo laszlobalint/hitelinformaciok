@@ -15,7 +15,7 @@ const Posts = (props) => {
 
   const postDeletedHandler = (id) => {};
 
-  let postElements = <span style={{ textAlign: 'center' }}>Hiba a cikkek betöltésekor!</span>;
+  let postElements = <span className={classes.Error}>Hiba a cikkek betöltésekor!</span>;
 
   if (!error) {
     postElements = posts.map((post) => (

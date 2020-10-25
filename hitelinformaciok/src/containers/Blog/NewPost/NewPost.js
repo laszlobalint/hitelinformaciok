@@ -1,45 +1,31 @@
-import React, { Component } from 'react';
-import axios from 'axios';
+import React, { useState } from 'react';
 
 import classes from './NewPost.module.css';
 
-class NewPost extends Component {
-  state = {
-    title: '',
-    content: '',
-    category: 'Max',
+const NewPost = (props) => {
+  const [title, setTitle] = useState(null);
+  const [body, setBody] = useState(null);
+  const [category, setCategory] = useState(null);
+
+  const postDataHandler = () => {
+    props.history.replace('/posts');
   };
 
-  postDataHandler = () => {
-    axios
-      .post(`/posts`, {
-        title: this.state.title,
-        body: this.state.content,
-        category: this.state.category,
-      })
-      .then((response) => {
-        alert('Post was sent!');
-        this.props.history.replace('/posts');
-      });
-  };
-
-  render() {
-    return (
-      <div className={classes.NewPost}>
-        <h1>Add a Post</h1>
-        <label>Title</label>
-        <input type="text" value={this.state.title} onChange={(event) => this.setState({ title: event.target.value })} />
-        <label>Content</label>
-        <textarea rows="4" value={this.state.content} onChange={(event) => this.setState({ content: event.target.value })} />
-        <label>Category</label>
-        <select value={this.state.category} onChange={(event) => this.setState({ category: event.target.value })}>
-          <option value="residental">Lakossági</option>
-          <option value="business">Vállalati</option>
-        </select>
-        <button onClick={this.postDataHandler}>Add Post</button>
-      </div>
-    );
-  }
-}
+  return (
+    <div className={classes.NewPost}>
+      <h1>Új cikk létrehozása</h1>
+      <label>Cím</label>
+      <input type="text" value={title} onChange={(event) => setTitle(event.target.value)} />
+      <label>Tartalom</label>
+      <textarea rows="4" value={body} onChange={(event) => setBody(event.target.value)} />
+      <label>Kategória</label>
+      <select value={category} onChange={(event) => setCategory(event.target.value)}>
+        <option value="residental">Lakossági</option>
+        <option value="business">Vállalati</option>
+      </select>
+      <button onClick={postDataHandler}>Cikk elküldése</button>
+    </div>
+  );
+};
 
 export default NewPost;

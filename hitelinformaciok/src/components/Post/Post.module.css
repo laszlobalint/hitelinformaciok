@@ -2,8 +2,8 @@
   width: 250px;
   padding: 16px;
   text-align: center;
-  border: 1px solid #eee;
-  box-shadow: 0 2px 3px #ccc;
+  border: 1px solid #eeeeee;
+  box-shadow: 0 2px 3px #cccccc;
   margin: 10px;
   box-sizing: border-box;
   cursor: pointer;
@@ -16,5 +16,5 @@
 
 .Category {
   margin: 16px 0;
-  color: #ccc;
+  color: #cccccc;
 }
