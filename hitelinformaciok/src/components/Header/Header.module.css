@@ -1,32 +1,32 @@
 .Dropdown {
-  font: inherit;
-  position: relative;
   display: inline-block;
-  margin-top: 2px;
-  z-index: 600;
-  position: absolute;
+  font: inherit;
   left: 70px;
+  margin-top: 2px;
+  position: absolute;
+  position: relative;
   top: 50%;
+  z-index: 600;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
 .Dropdown span {
-  line-height: 30px;
   color: #ffffff;
+  cursor: pointer;
+  line-height: 30px;
+  padding-right: 0.5rem;
   position: relative;
   text-decoration: none;
-  transition: 0.3s;
-  padding-right: 0.5rem;
-  cursor: pointer;
   text-transform: uppercase;
+  transition: 0.3s;
 }
 
 .DropdownContent {
+  display: none;
   font-size: smaller;
   position: absolute;
-  display: none;
 }
 
 .Dropdown:hover .DropdownContent {
@@ -52,12 +52,12 @@
 
 .Dropdown .Offers::before,
 .Dropdown .Offers::after {
-  position: absolute;
-  width: 100%;
+  background-color: #1976d2;
+  content: '';
   height: 2px;
   left: 0;
-  content: '';
-  background-color: #1976d2;
+  position: absolute;
+  width: 100%;
   transition: all 0.3s ease-in-out 0s;
   animation-duration: 1.5s;
   animation-name: underline;

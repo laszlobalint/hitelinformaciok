@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Redirect, Switch } from 'react-router-dom';
 
 import Main from '../components/Main/Main';
+import FullPost from '../containers/Blog/FullPost/FullPost';
 import NewPost from '../containers/Blog/NewPost/NewPost';
 import Posts from '../containers/Blog/Posts/Posts';
 
@@ -43,6 +44,7 @@ const getRoutes = (isAuthenticated) => {
         <Route path="/contact" render={(props) => <Contact {...props} />} />
         <Route path="/logout" render={(props) => <Logout {...props} />} />
         <Route path="/blog" render={(props) => <Blog {...props} />} />
+        <Route path="/full-post" render={(props) => <FullPost {...props} />} />
         <Route path="/posts" component={Posts} />
         <Route path="/new-post" component={NewPost} />
         <Route path="/" component={Main} />
@@ -57,6 +59,7 @@ const getRoutes = (isAuthenticated) => {
         <Route path="/impressum" render={(props) => <Impressum {...props} />} />
         <Route path="/data-privacy" render={(props) => <DataPrivacy {...props} />} />
         <Route path="/contact" render={(props) => <Contact {...props} />} />
+        <Route path="/full-post/:id" render={(props) => <FullPost {...props} />} />
         <Route path="/auth" render={(props) => <Auth {...props} />} />
         <Route path="/" component={Main} />
         <Redirect to="/" />

@@ -8,6 +8,8 @@
   margin: 0 auto;
 }
 
-.carousel .control-arrow {
-  opacity: 1 !important;
+.carousel .control-arrow,
+.carousel.carousel-slider .control-arrow {
+  background-color: #868585;
+  opacity: 1;
 }

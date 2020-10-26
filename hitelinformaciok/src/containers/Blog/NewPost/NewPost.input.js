@@ -10,7 +10,7 @@ export const newPostFormControls = {
     validation: {
       required: true,
       minLength: 3,
-      maxLength: 50,
+      maxLength: 70,
     },
     valid: false,
     touched: false,

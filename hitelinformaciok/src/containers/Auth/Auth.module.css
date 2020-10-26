@@ -1,15 +1,15 @@
 .Auth,
 .Auth > form {
-  position: relative;
   display: flex;
   flex-direction: column;
-  text-align: center;
   padding: 3rem 0 2rem 0;
+  position: relative;
+  text-align: center;
 }
 
 .Auth > form {
-  width: 40%;
   margin: 0 auto;
+  width: 40%;
 }
 
 .Auth > form > button {

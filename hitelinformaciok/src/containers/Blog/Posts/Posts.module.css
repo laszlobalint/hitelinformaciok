@@ -1,11 +1,11 @@
 .Posts {
+  align-content: stretch;
   display: flex;
   flex-flow: row wrap;
   justify-content: stretch;
-  align-content: stretch;
-  width: 80%;
   margin: auto;
   padding: 3rem;
+  width: 80%;
 }
 
 .Error {

@@ -1,20 +1,20 @@
 .MenuTop {
-  z-index: 99999;
-  width: fit-content;
   background-color: rgba(0, 0, 0, 0.8);
+  width: fit-content;
+  z-index: 99999;
 }
 
 .Items li,
 .Selected {
-  padding-right: 1rem;
   cursor: pointer;
   list-style: none;
+  padding-right: 1rem;
 }
 
 .Items li:hover,
 .Selected {
-  color: #ffffff;
   background-color: #1976d2;
+  color: #ffffff;
 }
 
 .Menu,

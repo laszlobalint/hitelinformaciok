@@ -1,22 +1,23 @@
 .FullPost {
-  width: 80%;
-  margin: 20px auto;
   border: 1px solid #eeeeee;
   box-shadow: 0 2px 3px #cccccc;
-  text-align: center;
+  margin: 20px auto;
+  padding: 3rem;
+  white-space: pre-wrap;
+  width: 80%;
 }
 
 .Edit label {
-  display: block;
   color: #868585;
+  display: block;
 }
 
 .Edit button {
-  border: none;
   background-color: transparent;
+  border: none;
+  color: #fa923f;
   cursor: pointer;
   outline: none;
-  color: #fa923f;
 }
 
 .Edit button:hover,
@@ -26,6 +27,9 @@
 
 .Edit button.Delete {
   color: #f80000;
+  font-size: x-large;
+  text-align: center;
+  width: 100%;
 }
 
 .Edit button.Delete:hover,
@@ -35,4 +39,10 @@
 
 .Align {
   text-align: center;
+}
+
+.Category {
+  font-style: italic;
+  font-weight: bold;
+  text-align: right;
 }

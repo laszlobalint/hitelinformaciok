@@ -1,12 +1,16 @@
 .Post {
-  width: 250px;
-  padding: 16px;
-  text-align: center;
-  border: 1px solid #eeeeee;
+  align-items: center;
+  border: 2px solid #eeeeee;
   box-shadow: 0 2px 3px #cccccc;
-  margin: 10px;
   box-sizing: border-box;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  justify-content: center;
+  margin: 10px;
+  padding: 16px;
+  width: 400px;
 }
 
 .Post:hover,
@@ -15,6 +19,6 @@
 }
 
 .Category {
-  margin: 16px 0;
   color: #cccccc;
+  margin: 16px 0;
 }

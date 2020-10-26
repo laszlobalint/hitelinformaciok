@@ -1,7 +1,7 @@
 .Blog ul {
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
   list-style: none;
   margin: 10rem;
   padding: 0;
@@ -13,8 +13,8 @@
 }
 
 .Blog a {
-  text-decoration: none;
   color: #000000;
+  text-decoration: none;
 }
 
 .Blog a:hover,

@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import classes from './FullPost.module.css';
 
 const FullPost = (props) => {
-  const { match, posts, onDeletePost } = props;
+  const { match, posts, isAuthenticated, onDeletePost } = props;
 
   const [loadedPost, setLoadedPost] = useState(posts.find((post) => Number(post.id) === Number(match.params?.id)));
 
@@ -16,15 +16,18 @@ const FullPost = (props) => {
     setLoadedPost(posts.find((post) => Number(post.id) === Number(match.params.id)));
 
   if (loadedPost) {
+    console.log(loadedPost);
     post = (
       <div className={classes.FullPost}>
         <h1>{loadedPost.title}</h1>
         <p>{loadedPost.body}</p>
-        <i>{loadedPost.category}</i>
+        <p className={classes.Category}>{loadedPost.category === 'residental' ? '#lakossági' : '#vállalati'}</p>
         <div className={classes.Edit}>
-          <button className={classes.Delete} onClick={() => onDeletePost(loadedPost.uniqe)} disabled={!isValid}>
-            Törlés
-          </button>
+          {isAuthenticated && (
+            <button className={classes.Delete} onClick={() => onDeletePost(loadedPost.uniqe)} disabled={!isValid}>
+              Törlés
+            </button>
+          )}
         </div>
       </div>
     );
@@ -36,6 +39,7 @@ const FullPost = (props) => {
 const mapStateToProps = (state) => {
   return {
     posts: state.posts.posts,
+    isAuthenticated: state.auth.token && state.auth.userId,
   };
 };
 
