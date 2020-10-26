@@ -16,7 +16,6 @@ const FullPost = (props) => {
     setLoadedPost(posts.find((post) => Number(post.id) === Number(match.params.id)));
 
   if (loadedPost) {
-    console.log(loadedPost);
     post = (
       <div className={classes.FullPost}>
         <h1>{loadedPost.title}</h1>

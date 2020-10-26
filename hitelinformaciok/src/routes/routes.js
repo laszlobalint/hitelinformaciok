@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Redirect, Switch } from 'react-router-dom';
 
-import Main from '../components/Main/Main';
+import Main from '../containers/Main/Main';
 import FullPost from '../containers/Blog/FullPost/FullPost';
 import NewPost from '../containers/Blog/NewPost/NewPost';
 import Posts from '../containers/Blog/Posts/Posts';
