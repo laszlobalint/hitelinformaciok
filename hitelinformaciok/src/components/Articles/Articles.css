@@ -1,12 +1,12 @@
 .carousel-root {
   display: flex;
-  justify-content: center;
 }
 
 .carousel .slide {
   background: none !important;
-  padding: 3rem 0 3rem 0;
+  padding: 3rem 2rem 3rem 2rem;
   text-align: center;
+  cursor: pointer;
 }
 
 .carousel .slide article {

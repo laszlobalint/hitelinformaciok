@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { connect } from 'react-redux';
 
 import classes from './FullPost.module.css';
@@ -6,7 +6,11 @@ import classes from './FullPost.module.css';
 const FullPost = (props) => {
   const { match, posts, isAuthenticated, onDeletePost } = props;
 
-  const [loadedPost, setLoadedPost] = useState(posts.find((post) => Number(post.id) === Number(match.params?.id)));
+  const [loadedPost, setLoadedPost] = useState(null);
+
+  useEffect(() => {
+    if (posts) setLoadedPost(posts.find((post) => Number(post.id) === Number(match.params?.id)));
+  }, [posts, match.params.id]);
 
   const isValid = () => loadedPost && match.params.id && !isNaN(match.params.id);
 

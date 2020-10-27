@@ -10,27 +10,24 @@ const Header = (props) => (
     <header>
       <div className="row">
         <div className="logo">
-          <a href="http://hitelinformaciok.hu/">Hitelinformaciok.hu</a>
+          <NavLink to="/" title="Főoldal" exact>
+            Főoldal
+          </NavLink>
         </div>
         <div className={classes.Dropdown}>
-          <span className={classes.Offers}>Lakossági</span>
+          <span className={classes.Offers}>Lakossági hitelek</span>
           <div className={classes.DropdownContent}>
             <Menu />
           </div>
         </div>
         <div className={classes.Dropdown}>
-          <span className={classes.Offers}>Vállalati</span>
+          <span className={classes.Offers}>Vállalati hitelek</span>
           <div className={classes.DropdownContent}>
             <Menu />
           </div>
         </div>
         <nav id="main-nav-wrap">
           <ul id="main-navigation" className="main-navigation">
-            <li>
-              <NavLink to="/" title="Rólunk" exact>
-                Rólunk
-              </NavLink>
-            </li>
             <li>
               <a href="http://hitelinformaciok.hu/" title="Ajánlatkérés">
                 Ajánlatkérés

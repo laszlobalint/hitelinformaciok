@@ -21,9 +21,9 @@ const Features = (props) => (
           <div className="service-content">
             <h3 className="h05">Használt ingatlan vásárlása</h3>
             <p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
-              ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
-              voluptas sit aspernatur aut odit aut fugit.
+              A használt ingatlan vásárlásához nyújtott hitel egyik legfontosabb feltétele, hogy olyan ingatlan esetén vehető igénybe,
+              melyet nem az ingatlan építtetőjétől, hanem a tulajdonostól vásárolunk és már érvényes használatbavételi engedéllyel
+              rendelkezik. A folyósításhoz szükséges továbbá aláírt és a bank által is jóváhagyott adásvételi szerződés.
             </p>
           </div>
         </div>
@@ -34,9 +34,9 @@ const Features = (props) => (
           <div className="service-content">
             <h3 className="h05">Új ingatlan vásárlása</h3>
             <p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
-              ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
-              voluptas sit aspernatur aut odit aut fugit.
+              A lakásvásárlási hitelek egy részében egy teljesen új ingatlan megvásárlása a cél. Elsőként is azt érdemes megnézünk, hogy mi
+              számít új lakásnak. Köznapi értelemben az, amiben még senki sem lakott korábban. Jogi értelemben pedig az, amiben még
+              hivatalosan senki sem lakott előtted vagy amit a jogszabály meghatároz.
             </p>
           </div>
         </div>
@@ -47,9 +47,9 @@ const Features = (props) => (
           <div className="service-content">
             <h3 className="h05">Ingatlan építése</h3>
             <p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
-              ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
-              voluptas sit aspernatur aut odit aut fugit.
+              Építési hitelnek nevezhetjük azt a lakáshitel típust, ahol a bank az az építkezés költségvetése alapján finanszírozza
+              ügyfelét. A költségvetés tartalmazza azt az összeget, amiből felépíthető az ingatlan a használatba vételi engedélyig. A
+              költségvetés összegét az ügyfél önereje és az igényelt építési hitel összege képezi.
             </p>
           </div>
         </div>
@@ -60,9 +60,9 @@ const Features = (props) => (
           <div className="service-content">
             <h3 className="h05">Ingatlan felújítása</h3>
             <p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
-              ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
-              voluptas sit aspernatur aut odit aut fugit.
+              Ráfér egy kis felújítás az otthonodra? Egy jól megválasztott felújítási hitellel szebb lehet, mint új korában! Felújítási
+              hitelt lakás, családi ház, ikerház vagy sorház felújítására is igényelhetsz. Építési engedély nélkül végezhető kisebb
+              munkálatokra, többek között festésre, burkolásra, konyhabútor cserélésére, nem főfal lebontására fordíthatod.
             </p>
           </div>
         </div>
@@ -73,9 +73,9 @@ const Features = (props) => (
           <div className="service-content">
             <h3 className="h05">Ingatlan bővítése</h3>
             <p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
-              ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
-              voluptas sit aspernatur aut odit aut fugit.
+              Azok körében, akik rendelkeznek már saját lakóingatlannal, a család bővülése miatt aktuálissá válhat a meglévő lakás bővítése.
+              Az ilyen jellegű munkálatokra is igényelhető lakáscélú jelzáloghitel. Lakásbővítésről akkor beszélhetünk, ha a lakástulajdonos
+              olyan építési munkát kíván elvégezni, melynek eredményeképpen a lakóingatlan minimum egy lakószobával bővül.
             </p>
           </div>
         </div>
@@ -86,9 +86,9 @@ const Features = (props) => (
           <div className="service-content">
             <h3 className="h05">Ingatlan korszerűsítése</h3>
             <p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
-              ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
-              voluptas sit aspernatur aut odit aut fugit.
+              Nagyobb beruházással járó lakáskorszerűsítésre szeretnél hitelt felvenni? Lakáskorszerűsítési hitel kalkulátorunkkal most
+              kiszámolhatja az aktuális törlesztő részleteket! Mielőtt kalkulálna, tájékozódj arról, hogy korszerűsítésre milyen típusú
+              hitel igényelhető. Korszerűsítés esetén nő a lakás komfortfokozata.
             </p>
           </div>
         </div>
@@ -99,9 +99,9 @@ const Features = (props) => (
           <div className="service-content">
             <h3 className="h05">Szabad felhasználás</h3>
             <p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
-              ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
-              voluptas sit aspernatur aut odit aut fugit.
+              Nem csoda, hogy egyre többen igénylünk személyi hitelt, hiszen gyorsan és olcsón juthatunk pénzhez. Ugyanakkor elérhető
+              jelenleg a piacon más hitelkonstrukció is szabad célra, melyeknek költségei szintén nagyon kedvezők. Ilyen például a Babaváró
+              támogatás vagy a szabad felhasználású jelzáloghitel.
             </p>
           </div>
         </div>
@@ -112,9 +112,9 @@ const Features = (props) => (
           <div className="service-content">
             <h3 className="h05">Hitelkiváltás</h3>
             <p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
-              ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
-              voluptas sit aspernatur aut odit aut fugit.
+              A hitelkiváltás során az adós meglévő hitelét vagy hiteleit más hitelre vagy hitelekre cseréli le. A bankok kínálnak
+              kifejezetten hitelkiváltás céljára személyi kölcsönt, jelzáloghitelt és Babaváró hitelt, ami azért lehet előnyös, mert így a
+              kiváltandó hitel havi törlesztőjét már nem veszik figyelembe a JTM számítás során.
             </p>
           </div>
         </div>
@@ -125,9 +125,9 @@ const Features = (props) => (
           <div className="service-content">
             <h3 className="h05">Egyéb célokra</h3>
             <p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
-              ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
-              voluptas sit aspernatur aut odit aut fugit.
+              Ha más célokra szeretnéd felhasználni a hitelt és támogatást, akkor közvetlenül konzultálj csapatunkkal, hogy felkutassuk a
+              körülményekhez leginkább megfelelő hitelkonstrukciót, mielőtt bármilyen döntést is kellene hozni. Emiatt javasoljuk az
+              előzetes hitelképességi vizsgálat elvégzését, melyet cégünk ingyenesen biztosít. Fordulj hozzánk bizalommal.
             </p>
           </div>
         </div>

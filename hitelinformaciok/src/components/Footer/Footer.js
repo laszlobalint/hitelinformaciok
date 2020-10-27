@@ -26,8 +26,8 @@ const Footer = (props) => (
           <h4>Linkek</h4>
           <ul>
             <li>
-              <NavLink to="/" title="Rólunk" exact>
-                Rólunk
+              <NavLink to="/" title="Főoldal" exact>
+                Főoldal
               </NavLink>
             </li>
             <li>

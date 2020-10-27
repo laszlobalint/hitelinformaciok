@@ -17,7 +17,7 @@ const Calculator = (props) => {
       window.addEventListener ? window.addEventListener('message', iframeListener, false) : window.attachEvent('onmessage', iframeListener);
 
       return () => {
-        window.removeEventListener('message');
+        window.removeEventListener('message', iframeListener);
       };
     }
   }, []);

@@ -1,6 +1,5 @@
 import React from 'react';
 
-import Aux from '../../hoc/Auxiliary/Auxiliary';
 import Articles from '../../components/Articles/Articles';
 import Opinions from '../../components/Opinions/Opinions';
 import Customer from '../../components/Customer/Customer';
@@ -9,14 +8,14 @@ import Features from '../../components/Features/Features';
 import Partners from '../../components/Partners/Partners';
 
 const Main = (props) => (
-  <Aux>
+  <div style={{ backgroundColor: '#eaeaed' }}>
     <Articles />
     <Customer />
     <Opinions />
     <HowItWorks />
     <Features />
     <Partners />
-  </Aux>
+  </div>
 );
 
 export default Main;

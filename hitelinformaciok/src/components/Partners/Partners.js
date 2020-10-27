@@ -1,12 +1,12 @@
 import React from 'react';
 
-import bankLogos from '../../assets/images/partner_banks.jpg';
+import classes from './Partner.module.css';
+import { BANK_LOGOS } from './Partner.banks';
 
 export const Partners = (props) => (
-  <section id="styles">
-    <div className="row" style={{ marginTop: '3rem' }}>
+  <section id="styles" className={classes.Partners}>
+    <div className="row">
       <div className="col-six tab-full">
-        <h3>Pénz szerepe</h3>
         <aside className="pull-quote">
           <blockquote>
             <p>
@@ -20,7 +20,6 @@ export const Partners = (props) => (
         </aside>
       </div>
       <div className="col-six tab-full">
-        <h3>Vállalkozószellem</h3>
         <blockquote>
           <p>Hány milliomost ismersz, akik egy takarékbetét-számlába való befektetésnek köszönhetően gazdagodtak meg? Zárom beszédem.</p>
           <cite>
@@ -29,11 +28,13 @@ export const Partners = (props) => (
         </blockquote>
       </div>
     </div>
-    <div className="row half-bottom">
-      <div className="col-six tab-full">
-        <h3>Partner bankintézeteink</h3>
-        <div className="fluid-video-wrapper">
-          <img src={bankLogos} alt="Bankpartnereink" />
+    <div className="row tab-full">
+      <div>
+        <h2 className={classes.Title}>Partner bankintézeteink</h2>
+        <div className={classes.Logos}>
+          {BANK_LOGOS.map((logo) => (
+            <img src={logo} alt="Bankpartnereink" key={Math.random() * 10} />
+          ))}
         </div>
       </div>
     </div>
