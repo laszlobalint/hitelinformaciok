@@ -13,10 +13,13 @@ const Header = (props) => (
           <a href="http://hitelinformaciok.hu/">Hitelinformaciok.hu</a>
         </div>
         <div className={classes.Dropdown}>
-          <span className={classes.Offers}>Ajánlataink</span>
-          <span className="icon">
-            <i className="icon-download"></i>
-          </span>
+          <span className={classes.Offers}>Lakossági</span>
+          <div className={classes.DropdownContent}>
+            <Menu />
+          </div>
+        </div>
+        <div className={classes.Dropdown}>
+          <span className={classes.Offers}>Vállalati</span>
           <div className={classes.DropdownContent}>
             <Menu />
           </div>
@@ -39,23 +42,13 @@ const Header = (props) => (
               </NavLink>
             </li>
             <li>
-              <NavLink to="/data-privacy" title="Adatvédelem és adatkezelési tájékoztató">
-                Adatvédelem
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/impressum" title="Impresszum">
-                Impresszum
-              </NavLink>
-            </li>
-            <li>
               <NavLink to="/contact" title="Kapcsolat">
                 Kapcsolat
               </NavLink>
             </li>
             <li className="highlight with-sep">
-              <NavLink to="/calculator" title="Hitelkalkulációk">
-                Hitelkalkulációk
+              <NavLink to="/calculator" title="Hitelkalkulátor">
+                Hitelkalkulátor
               </NavLink>
             </li>
           </ul>

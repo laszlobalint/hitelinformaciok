@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
 }
+
 *,
 *::before,
 *::after {
@@ -12,7 +13,6 @@
 }
 
 html {
-  font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   font-size: 62.5%;

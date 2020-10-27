@@ -3,9 +3,9 @@ import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { Carousel } from 'react-responsive-carousel';
 
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './Articles.css';
-import Post from '../Post/Post';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { THUMBNAILS } from '../../shared/thumbnails';
 
 const Articles = (props) => {
   const { posts, history } = props;
@@ -16,19 +16,24 @@ const Articles = (props) => {
     carouselItems = posts
       .sort((a, b) => b.id - a.id)
       .slice(0, 10)
-      .map((post) => <Post key={post.uniqe} category={post.category} title={post.title} id={post.id} />);
+      .map((post, index) => (
+        <div key={post.id}>
+          <img src={THUMBNAILS[index]} alt={post.title} />
+          <h3>{post.title}</h3>
+        </div>
+      ));
   }
 
   return (
     <div>
       <Carousel
+        width={'400px'}
         showThumbs={false}
         showStatus={false}
-        showArrows
-        interval={5000}
+        interval={6000}
         autoPlay
         infiniteLoop
-        onClickItem={(index, item) => history.push(`/full-post/${item.props.id}`)}
+        onClickItem={(index, item) => history.push(`/full-post/${item.key}`)}
       >
         {carouselItems}
       </Carousel>

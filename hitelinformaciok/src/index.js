@@ -7,7 +7,6 @@ import thunk from 'redux-thunk';
 import createSagaMiddleware from 'redux-saga';
 
 import './styles/base.css';
-import './styles/fonts.css';
 import './styles/main.css';
 import './styles/vendor.css';
 
