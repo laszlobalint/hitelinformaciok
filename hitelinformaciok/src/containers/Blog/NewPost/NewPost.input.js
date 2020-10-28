@@ -15,22 +15,6 @@ export const newPostFormControls = {
     valid: false,
     touched: false,
   },
-  body: {
-    elementType: 'textarea',
-    elementConfig: {
-      placeholder: 'Írd le a cikk tartalmát...',
-      rows: 4,
-      cols: 36,
-    },
-    value: '',
-    label: 'Tartalom',
-    validation: {
-      required: true,
-      minLength: 3,
-    },
-    valid: false,
-    touched: false,
-  },
   category: {
     elementType: 'select',
     elementConfig: {

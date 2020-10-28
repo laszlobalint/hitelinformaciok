@@ -25,6 +25,12 @@
   width: 80%;
 }
 
+.Editor {
+  margin: auto;
+  padding-top: 4rem;
+  width: 80%;
+}
+
 .NewPost button {
   background-color: transparent;
   border: 1px solid #fa923f;

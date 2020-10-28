@@ -8,11 +8,13 @@ import { newPostFormControls } from './NewPost.input';
 import { updateObject } from '../../../shared/utility';
 import { checkValidity } from '../../../shared/validation';
 import Input from '../../../components/Input/Input';
+import Editor from '../../../components/Editor/Editor';
 
 const NewPost = (props) => {
   const { counter, error, loading, isAuthenticated, onSavePost } = props;
 
   const [controls, setControls] = useState(newPostFormControls);
+  const [html, setHtml] = useState('');
   const [isValid, setIsValid] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
@@ -32,12 +34,16 @@ const NewPost = (props) => {
     setIsValid(formIsValid);
   };
 
+  const changeHandler = (data) => {
+    setHtml(data);
+  };
+
   const submitFormHandler = (event) => {
     event.preventDefault();
     const newPostData = {
       id: counter + 1,
       title: controls.title.value,
-      body: controls.body.value,
+      body: html,
       category: controls.category.value,
     };
     onSavePost(newPostData, newPostData.id);
@@ -61,6 +67,9 @@ const NewPost = (props) => {
         changed={(event) => inputChangedHandler(event, element.id)}
       />
     )),
+    <div key="editor" className={classes.Editor}>
+      <Editor placeholder={'Írd be a cikk tartalmát...'} changed={changeHandler} />,
+    </div>,
     <button key="button" type="submit" disabled={!isValid}>
       KÜLDÉS
     </button>,
