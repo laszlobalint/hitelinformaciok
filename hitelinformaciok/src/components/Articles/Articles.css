@@ -12,3 +12,10 @@
 .carousel .slide article {
   margin: 0 auto;
 }
+
+@media only screen and (max-width: 400px) {
+  .carousel .slide {
+    margin: 0;
+    padding: 0;
+  }
+}

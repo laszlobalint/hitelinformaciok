@@ -6,6 +6,7 @@ import Customer from '../../components/Customer/Customer';
 import HowItWorks from '../../components/HowItWorks/HowItWorks';
 import Features from '../../components/Features/Features';
 import Partners from '../../components/Partners/Partners';
+import Tooltip from '../../components/Tooltip/Tooltip';
 
 const Main = (props) => (
   <div style={{ backgroundColor: '#eaeaed' }}>
@@ -15,6 +16,7 @@ const Main = (props) => (
     <HowItWorks />
     <Features />
     <Partners />
+    <Tooltip />
   </div>
 );
 

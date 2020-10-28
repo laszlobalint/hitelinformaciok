@@ -17,13 +17,13 @@ const Header = (props) => (
         <div className={classes.Dropdown}>
           <span className={classes.Offers}>Lakossági hitelek</span>
           <div className={classes.DropdownContent}>
-            <Menu />
+            <Menu type={'residental'} />
           </div>
         </div>
         <div className={classes.Dropdown}>
           <span className={classes.Offers}>Vállalati hitelek</span>
           <div className={classes.DropdownContent}>
-            <Menu />
+            <Menu type={'business'} />
           </div>
         </div>
         <nav id="main-nav-wrap">

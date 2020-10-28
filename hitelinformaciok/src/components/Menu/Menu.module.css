@@ -7,6 +7,7 @@
 .Items li,
 .Selected {
   cursor: pointer;
+  font-size: larger;
   list-style: none;
   padding-right: 1rem;
 }
@@ -21,6 +22,7 @@
 .Content,
 .Item {
   color: #ffffff;
+  font-size: larger;
   padding-right: 1rem;
   width: max-content;
 }
@@ -28,4 +30,5 @@
 .Container,
 .Content {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  font-size: larger;
 }

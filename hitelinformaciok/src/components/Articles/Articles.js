@@ -18,7 +18,7 @@ const Articles = (props) => {
       .slice(0, 10)
       .map((post, index) => (
         <div key={post.id}>
-          <img src={THUMBNAILS[index]} alt={post.title} style={{maxHeight: '400px'}}/>
+          <img src={THUMBNAILS[index]} alt={post.title} style={{ maxHeight: '400px' }} />
           <h3>{post.title}</h3>
         </div>
       ));
@@ -30,11 +30,11 @@ const Articles = (props) => {
         showThumbs={false}
         showStatus={false}
         interval={6000}
+        centerSlidePercentage={40}
         autoPlay
         infiniteLoop
-        onClickItem={(index, item) => history.push(`/full-post/${item.key}`)}
         centerMode
-        centerSlidePercentage={40}
+        onClickItem={(index, item) => history.push(`/full-post/${item.key}`)}
       >
         {carouselItems}
       </Carousel>

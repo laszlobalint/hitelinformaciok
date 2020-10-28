@@ -75,3 +75,18 @@
     transform: scaleX(1);
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .Dropdown {
+    display: flex;
+  }
+
+  .Dropdown,
+  .Dropdown span {
+    top: 8px;
+  }
+
+  .Dropdown .Offers::after {
+    bottom: -6%;
+  }
+}
