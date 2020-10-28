@@ -489,7 +489,7 @@ input[type='button'] {
   text-decoration: none;
   cursor: pointer;
   text-align: center;
-  white-space: nowrap;
+  #ffffff-space: nowrap;
   border: none;
   border-radius: 1000px;
   -moz-transition: all 0.3s ease-in-out;
@@ -671,7 +671,7 @@ header .logo a {
   color: transparent;
   width: 42px;
   height: 42px;
-  background: url(../assets/images/logo.png) no-repeat center;
+  background: url(../images/logo.png) no-repeat center;
   background-size: 42px 42px;
   -moz-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
@@ -696,6 +696,7 @@ header .logo a {
 }
 #main-nav-wrap,
 .main-navigation {
+  font-weight: bold;
   margin: 0;
   padding: 0;
 }
@@ -703,7 +704,6 @@ a.menu-toggle {
   display: none;
 }
 #main-nav-wrap {
-  text-transform: uppercase;
   letter-spacing: 1.5px;
   position: absolute;
   top: 0;
@@ -716,10 +716,11 @@ a.menu-toggle {
   text-align: left;
 }
 .main-navigation li {
+  font-size: 1.1em;
   position: relative;
   display: inline-block;
   list-style: none;
-  padding: 0;
+  padding-right: 8px;
   margin: 0;
   height: 66px;
 }
@@ -827,7 +828,7 @@ a.menu-toggle {
     top: 50%;
     bottom: auto;
     left: auto;
-    background-color: white;
+    background-color: #ffffff;
     -moz-transition: background 0.2s ease-in-out;
     -o-transition: background 0.2s ease-in-out;
     -webkit-transition: background 0.2s ease-in-out;
@@ -877,7 +878,7 @@ a.menu-toggle {
   }
   .menu-toggle.is-clicked span::before,
   .menu-toggle.is-clicked span::after {
-    background-color: white;
+    background-color: #ffffff;
     -moz-transition-delay: 0s, 0.2s;
     -o-transition-delay: 0s, 0.2s;
     -webkit-transition-delay: 0s, 0.2s;
@@ -947,7 +948,7 @@ a.menu-toggle {
   }
 }
 #intro {
-  background: #14181e url(../assets/images/intro-bg.jpg) no-repeat center;
+  background: #14181e url(../images/intro-bg.jpg) no-repeat center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1152,7 +1153,7 @@ a.menu-toggle {
 .process-content .image-part {
   margin: 0 auto;
   height: 660px;
-  background-image: url(../assets/images/steps_calculator.png);
+  background-image: url(../images/steps_calculator.png);
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: contain;
@@ -1220,21 +1221,21 @@ a.menu-toggle {
   }
 }
 #features {
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url(../assets/images/features-bg.jpg);
-  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url(../assets/images/features-bg.jpg);
-  background-image: -o-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url(../assets/images/features-bg.jpg);
-  background-image: -ms-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url(../assets/images/features-bg.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url(../assets/images/features-bg.jpg);
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url(../images/features-bg.jpg);
+  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url(../images/features-bg.jpg);
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url(../images/features-bg.jpg);
+  background-image: -ms-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url(../images/features-bg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url(../images/features-bg.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding-top: 12rem;
-  padding-bottom: 12rem;
-  color: white;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  color: #ffffff;
 }
 #features .section-intro h1 {
-  color: white;
+  color: #ffffff;
 }
 #features .section-intro h5 {
   color: rgba(255, 255, 255, 0.5);
@@ -1806,7 +1807,7 @@ footer ul li {
 }
 .footer-main .footer-logo {
   height: 80px;
-  background: url(../assets/images/hitelexpert.png) no-repeat center;
+  background: url(../images/hitelexpert.png) no-repeat center;
   display: block;
 }
 .footer-main .footer-subscribe p {

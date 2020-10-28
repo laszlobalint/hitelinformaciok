@@ -30,7 +30,7 @@
 }
 
 .Contact:after {
-  background-image: url('../../assets/images/subscription.jpg');
+  background-image: url('../../images/subscription.jpg');
   content: '';
   display: block;
   height: 100%;

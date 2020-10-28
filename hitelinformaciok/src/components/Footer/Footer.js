@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-import office from '../../assets/images/office_building.jpg';
+import office from '../../images/office_building.jpg';
 
 const Footer = (props) => (
   <footer>
@@ -31,8 +31,8 @@ const Footer = (props) => (
               </NavLink>
             </li>
             <li>
-              <a href="http://hitelinformaciok.hu/" title="Ajánlatkérés">
-                Ajánlatkérés
+              <a href="http://hitelinformaciok.hu/" title="Hitel előminősítés">
+                Hitel előminősítés
               </a>
             </li>
             <li>

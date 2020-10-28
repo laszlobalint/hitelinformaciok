@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ownerShip from '../../assets/images/ownership.png';
+import ownerShip from '../../images/ownership.png';
 
 const Impressum = (props) => (
   <section id="styles" style={{ margin: '3rem 0 3rem 0' }}>

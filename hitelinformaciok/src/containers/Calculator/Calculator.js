@@ -7,7 +7,7 @@ import { WHITELIST_DOMAINS } from '../../shared/configuration';
 const Calculator = (props) => {
   const [searchData, setSearchData] = useState(null);
   const [calculatorUrl] = useState(
-    getCalculatorURL(19, 10000000, 240, 5, false, 'kalkulatorok', [], false, 'info@hitelinformaciok.hu', 'home_loan'),
+    getCalculatorURL(19, 10000000, 240, 5, false, 'Calculator', [], false, 'info@hitelinformaciok.hu', 'home_loan'),
   );
 
   useEffect(() => {

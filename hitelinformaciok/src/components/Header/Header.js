@@ -29,8 +29,8 @@ const Header = (props) => (
         <nav id="main-nav-wrap">
           <ul id="main-navigation" className="main-navigation">
             <li>
-              <a href="http://hitelinformaciok.hu/" title="Ajánlatkérés">
-                Ajánlatkérés
+              <a href="http://hitelinformaciok.hu/" title="Hitel előminősítés">
+                Hitel előminősítés
               </a>
             </li>
             <li>

@@ -8,8 +8,8 @@ const Faq = (props) => (
         <h5>GY.I.K.</h5>
         <h1>Kérdések és válaszok.</h1>
         <p className="lead">
-          Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum
-          Consectetur ut in in eu do.
+          A Hitel Expertnél naprakész kollégák segítenek, ahogy adósságrendező hitelkalkulátorunk is mindig az aktuális kínálatot tárja
+          eléd.
         </p>
       </div>
     </div>

@@ -167,10 +167,11 @@ const DataPrivacy = (props) => (
           pénzügyi szolgáltatók:
         </p>
         <p>
-          Budapest Bank Nyrt, CIB Bank Zrt, Cofidis Magyarországi fióktelepe, Erste Bank Hungary Zrt, FHB Kereskedelmi Bank Zrt, FHB
-          Jelzálogbank Nyrt, FHB Lízing Zrt, Gránit Bank Zrt, K&amp;H Bank Zrt, Magyar Cetelem Bank Zrt., MKB Bank Zrt, Oberbank AG
-          Magyarországi Fióktelepe, OTP Bank Nyrt.,OTP Jelzálogbank Zrt, OTP Ingatlanlízing Zrt.,Provident Pénzügyi Zrt, Raiffeisen Bank
-          Zrt, Sberbank Magyarország Zrt, Sopron Bank Burgerland Zrt, Unicredit Bank Hungary Zrt.
+          Budapest Bank Nyrt., CIB Bank Zrt., Cofidis Magyarországi fióktelepe, Erste Bank Hungary Zrt., Takarékbank Zrt., Takarék Lízing
+          Zrt., Gránit Bank Zrt., K&amp;H Bank Zrt., Magyar Cetelem Bank Zrt., MKB Bank Nyrt., Oberbank AG Magyarországi Fióktelepe, OTP
+          Bank Nyrt., OTP Jelzálogbank Zrt., OTP Ingatlanlízing Zrt., Provident Pénzügyi Zrt., Raiffeisen Bank Zrt., Sberbank Magyarország
+          Zrt., Sopron Bank Burgerland Zrt., Unicredit Bank Hungary Zrt., Aegon Magyarország Zrt., BG Finance Zrt., Carion Finanszírozási
+          Centrum Zrt., MKB-Euroleasing Autólizing Zrt., Merkantil Bank Zrt.
         </p>
         <p>7. A Felhasználó jogai</p>
         <p>7.1. A Felhasználó profiljának törlésével törölheti magát a rendszerből. </p>

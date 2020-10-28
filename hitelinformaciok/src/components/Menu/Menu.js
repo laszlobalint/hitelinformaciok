@@ -12,18 +12,34 @@ const Menu = (props) => {
     if (type && type === 'residental')
       setMenuItems([
         {
-          label: 'Magánszemélyek',
-          key: 'residental',
-          items: (
-            <ul className={classes.Items}>
-              <li>Lakáshitel</li>
-              <li>Hitelkiváltás</li>
-              <li>Szabadfelhasználás</li>
-              <li>Személyi kölcsön</li>
-              <li>NOK</li>
-              <li>LTP</li>
-            </ul>
-          ),
+          label: 'Lakáshitel',
+          key: 'homeLoan',
+          items: null,
+        },
+        {
+          label: 'Hitelkiváltás',
+          key: 'loanChange',
+          items: null,
+        },
+        {
+          label: 'Szabadfelhasználás',
+          key: 'freeUsage',
+          items: null,
+        },
+        {
+          label: 'Személyi kölcsön',
+          key: 'personalLoan',
+          items: null,
+        },
+        {
+          label: 'NOK',
+          key: 'nok',
+          items: null,
+        },
+        {
+          label: 'LTP',
+          key: 'ltp',
+          items: null,
         },
       ]);
 

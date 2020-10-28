@@ -30,10 +30,10 @@ export const Partners = (props) => (
     </div>
     <div className="row tab-full">
       <div>
-        <h2 className={classes.Title}>Partner bankintézeteink</h2>
+        <h2 className={classes.Title}>Partnereink</h2>
         <div className={classes.Logos}>
-          {BANK_LOGOS.map((logo) => (
-            <img src={logo} alt="Bankpartnereink" key={Math.random() * 10} />
+          {BANK_LOGOS.map((item) => (
+            <img src={item.logo} key={item.title} alt={item.title} title={item.title} />
           ))}
         </div>
       </div>

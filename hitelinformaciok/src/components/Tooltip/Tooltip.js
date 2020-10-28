@@ -1,7 +1,7 @@
 import React from 'react';
 
 import classes from './Tooltip.module.css';
-import askUs from '../../assets/images/askUsLogo.png';
+import askUs from '../../images/askUsLogo.png';
 
 const Tooltip = (props) => (
   <div className={classes.AskUsTooltip}>
